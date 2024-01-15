@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Playpen Sans", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
+/*HEADER*/
+
+/*carrito de compra cantidad*/
+.logo-shoppingcart {
+  position: absolute;
+  margin-top: 35px;
+  margin-left: -73px;
+}
+
+.cart-amount {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  top: 25px;
+  right: 12px;
+  font-size: 16px;
+  margin: 0px;
+  border-radius: 50%;
+  min-width: 22px;
+}
+
+/*FOOTER*/
+
+/*estilo carrito*/
+.cart {
+  position: relative;
+  text-align: center;
+}
+
+.cart h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cart-items li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-image {
+   width: 110px; /*Tamaño deseado para las imágenes comentado por que afectaba el estilo de la imagen de producto  */
+  height: auto;
+  border-radius: 8px;
+}
+
+.total {
+  margin-top: 30px;
+}
+
+.clear-cart,
+.continue-shopping,
+.pay-now {
+  background-color: #297780;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 11rem;
+  height: 2.6rem;
+}
+
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-methods label {
+  font-size: 14px;
+}
+
+.total p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.total {
+  margin-bottom: 1rem;
+}
