@@ -1,9 +1,8 @@
-{
-    "moviles": [
+[
       {
         "nombre": "HappyZ Flip",
         "clave": "product",
-        "ruta_imagen": "./img/happy.svg",
+        "ruta_imagen": "./src/assets/happy.svg",
         "precio": 599,
         "descripcion": "Increíble smartphone",
         "color": "negro"
@@ -19,7 +18,7 @@
       {
         "nombre": "Happy 2",
         "clave": "product2",
-        "ruta_imagen": "./img/happy2.svg",
+        "ruta_imagen": "./src/assets/happy2.svg",
         "precio": 699,
         "descripcion": "Potente y elegante",
         "color": "plateado"
@@ -89,4 +88,3 @@
         "color": "azul"
       }
     ]
-  }

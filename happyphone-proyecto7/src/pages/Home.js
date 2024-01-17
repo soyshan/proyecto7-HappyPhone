@@ -1,16 +1,25 @@
-import React from 'react';
-// import FooterComponent from './components/Footer';
-import { ReactComponent as HappyInicio } from '../assets/happyinicio.svg';
-
+import React, { useState, useEffect } from 'react';
+import HappyInicio from '../assets/happyinicio.svg';
+import Moviles from '../components/Moviles.js';
 
 export const Home = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('./json/catalogo.json')
+      .then(response => response.json())
+      .then(data => {
+        setProducts(data.moviles);
+              });    
+    //  NO FUNCIONA LA LLAMADA AL JSON
+  }, []);
+
   return (
     <>
-    
       {/* OFERTA PRINCIPAL */}
       <main className="main-offer" id="main-offer">
         <figure>
-          <a href="./html/product.html"><HappyInicio className="main-image" alt="Foto con oferta de móvil de lanzamiento" /></a>
+          <a href="./html/product.html"><img src={HappyInicio} className="main-image" alt="Foto con oferta de móvil de lanzamiento" /></a>
         </figure>
         <article className="main-text">
           <h1>Consigue tu HappyZ Flip con HappyPhone</h1>
@@ -19,18 +28,8 @@ export const Home = () => {
         </article>
       </main>
 
-      {/* CAROUSEL PRODUCTOS */}
-      <section className="carousel-products" id="carousel-products">
-        {/* Aquí deberías incluir tu lógica para mostrar productos en el carousel */}
-      </section>
-      <section className="productoBuscado" id="productoBuscado">
-        {/* Aquí deberías incluir tu lógica para mostrar productos buscados */}
-      </section>
-      <br />
+      <Moviles />
 
-      {/* FOOTER */}
-      {/* <FooterComponent /> */}
     </>
   );
 };
-

@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
+import logo from '../assets/logo.png'; // Importa la imagen del logo
+import busqueda from '../assets/busqueda.svg'; // Importa la imagen de la lupa
+import shoppingcart from '../assets/shoppingcart.png';
 
 export const Navigation = () => {
   const navigate = useNavigate();
@@ -25,13 +28,12 @@ export const Navigation = () => {
   return (
     <>
       <header className='container-nav'>
-        <Link to='/' className='logo'>
-          <img
-            src='./assets/logo.png'
-            alt='Logo Happy Phone'
-          />
-          
-        </Link>
+      <Link to='/' className='logo'>
+        <img
+          src={logo} // Utiliza la ruta importada para el logo
+          alt='Logo Happy Phone'
+        />
+      </Link>
 
         <nav className='nav-space'>
           <Link to='./WorkWithUs' className='a-nav'>Inicia sesión</Link>
@@ -39,7 +41,7 @@ export const Navigation = () => {
         
 
         <Link id="toggleSearchButton" onClick={toggleSearchInput} ><img className='lupa'
-            src='./assets/busqueda.svg'
+            src={busqueda}
             alt='Lupa de busqueda'
           /></Link>
         {showSearch && (
@@ -51,7 +53,7 @@ export const Navigation = () => {
 
         <Link onClick={redirectToOtraPagina} >
           <img className='logo-shoppingcart'
-		  src='./assets/shoppingcart.png' 
+		  src={shoppingcart} 
 		  alt="Carro" />
         </Link>
 	  	</nav>
