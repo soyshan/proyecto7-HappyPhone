@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* traspasar */
+
+.container-nav {
+	display: flex;
+    align-items: center;
+    background-color: #dfdfe2;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.logo img {
+	height: 60px;
+    display: flex;
+    padding: 10%;
+}
+.lupa{
+	width: 30px;
+	height: 30px;
+}
+.logo-shoppingcart {
+	width: 40px;
+	margin-right: 15px;
+}
+.a-nav {
+	font-weight: bold;
+    margin: 0 25px;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+

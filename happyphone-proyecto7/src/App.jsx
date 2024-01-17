@@ -12,13 +12,12 @@ import { WorkWithUs } from './pages/WorkWithUs'
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route index element={<Navigation />} />
-        <Route path="/" element={<Home />} />
+      <Routes to='./' element= {<Navigation />}>
+        <Route index element={<Home />} />
         <Route path="sobre-nosotros" element={<SobreNosotros />} />
         <Route path="contactform" element={<ContactForm />} />
-        <Route path="abouthappyphone" element={<AboutHappyPhone />} />
-        <Route path="workwithus" element={<WorkWithUs />} />
+        <Route path='abouthappyphone' element={<AboutHappyPhone />} />
+        <Route path='workwithus' element={<WorkWithUs />} />
       </Routes>
     </div>
   );
