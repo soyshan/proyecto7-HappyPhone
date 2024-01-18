@@ -1,5 +1,6 @@
 import React from 'react';
-import './thanks.css'
+import '../components/Thanks contact/thanks.css'
+import { Link } from 'react-router-dom';
 
 export const Thanks = () => {
   return (
@@ -11,11 +12,8 @@ export const Thanks = () => {
       <article className="thanks-text">
         <h2>¡GRACIAS POR TU SOLICITUD!</h2>
         <h3>Tu solicitud ha sido recibida.</h3>
-        <p>Para más información sobre su pedido <a href="contact.html" target="_self">Contáctanos</a></p>
+         <Link to="/ContactForm" target="_self">Contáctanos </Link>
       </article>
     </main>
   );
 };
-
-
-

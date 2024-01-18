@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Redirect } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../components/contact.css';
 import userLogo from '../assets/user.png';
 import logowhatsapp from '../assets/whatsapp.png';
 import emailIcon from '../assets/envelope.png';
 import phone from '../assets/phone.png';
+import { Link } from 'react-router-dom';
+import { Thanks } from './Thanks';
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -16,7 +18,8 @@ export function ContactForm() {
   });
 
   const [errors, setErrors] = useState({});
-  const [isFormSubmitted, setFormSubmitted] = useState(false);
+  const [isFormSubmitted, setFormSubmitted] = useState(false);;
+  const navigate = useNavigate();  // Usa useNavigate en lugar de Navigate
 
 
   const handleChange = (e) => {
@@ -66,16 +69,20 @@ export function ContactForm() {
 
   useEffect(() => {
     if (isFormSubmitted) {
-      // Puedes ajustar la ruta según tu configuración
-      // En este ejemplo, se redirige a "/agradecimiento"
-      return <Redirect to="./agradecimiento" />;
+      // Realiza la redirección
+      navigate('/Thanks');
     }
-  }, [isFormSubmitted]);
+  }, [isFormSubmitted, navigate]);
 
 
   return (
     <main className="contacto">
       <section className="formulario">
+      {isFormSubmitted ? (
+          <Thanks />
+        ) : (
+
+
         <>
         <h4>NUESTRO EQUIPO SE PONDRÁ EN CONTACTO CONTIGO</h4>
         <form id="contactForm" onSubmit={handleSubmit}>
@@ -158,7 +165,7 @@ export function ContactForm() {
 
           <div className="form-group">
             <label htmlFor="terminos">
-              <span>*</span>Acepto los <a href="terms.html">Términos y Condiciones</a>
+              <span>*</span>Acepto los <Link to="/Terms">Términos y Condiciones</Link>
             </label>
             <input
               type="checkbox"
@@ -189,6 +196,7 @@ export function ContactForm() {
         </div>
       
         </>
+        )}
       </section>
 
     

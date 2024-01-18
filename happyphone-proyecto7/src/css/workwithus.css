@@ -34,8 +34,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 45px;
-  margin: 35px;
+   margin: 35px;
 }
 
 .container {

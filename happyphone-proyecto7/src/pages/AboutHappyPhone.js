@@ -3,7 +3,7 @@ import '../css/aboutus.css';
 
 export const AboutHappyPhone = () => {
   return (
-    <main>
+    <main className='aboutUsMain'>
       <section className='bienvenido'>
         <h2>Bienvenido a Happy Phone</h2>
         <p>En Happy Phone, nuestra pasión es conectar a las personas con la tecnología. Desde nuestros inicios, nos hemos comprometido en ofrecer lo mejor en telefonía móvil, brindando a nuestros clientes acceso a dispositivos innovadores que mejoran sus vidas y les mantienen conectados con lo que más les importa.</p>
