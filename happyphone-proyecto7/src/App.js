@@ -8,7 +8,6 @@ import { WorkWithUs } from './pages/WorkWithUs'
 import { Terms } from './pages/Terms'
 import { Equipo } from './pages/MoreInformation'
 import { Footer }from './components/Footer/FooterComponent';
-
 import MovilUnico from './components/MovilUnico';
 
 function App() {
