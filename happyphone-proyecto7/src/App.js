@@ -6,9 +6,10 @@ import { Navigation } from './components/Navigation'
 import { AboutHappyPhone } from './pages/AboutHappyPhone'
 import { WorkWithUs } from './pages/WorkWithUs'
 import { Terms } from './pages/Terms'
-import { Equipo } from './pages/MoreInformation'
+// import { Equipo } from './pages/MoreInformation'
 import { Footer }from './components/Footer/FooterComponent';
 import MovilUnico from './components/MovilUnico';
+import { Thanks } from './pages/Thanks';
 
 function App() {
   return (
@@ -23,7 +24,11 @@ function App() {
           <Route path='abouthappyphone' element={<AboutHappyPhone />} />
           <Route path='workwithus' element={<WorkWithUs />} />
           <Route path='terms' element={<Terms/>} />
-          <Route path='equipo' element={<Equipo/>} />
+          {/* <Route path='equipo' element={<Equipo/>} /> */}
+          <Route path='Thanks' element={<Thanks/>} />
+         
+
+
         </Routes>
         <Footer />
       </BrowserRouter>

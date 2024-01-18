@@ -18,7 +18,7 @@
         "id": 2,
         "nombre": "Happy 1",
         "clave": "product1",
-        "ruta_imagen": "./img/happy1.svg",
+        "ruta_imagen": "happy1.svg",
         "precio": 299.99,
         "descripcion": "Increíble smartphone",
         "color": "negro",
