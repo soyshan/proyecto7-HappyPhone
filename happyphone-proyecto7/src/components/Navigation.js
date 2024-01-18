@@ -34,8 +34,8 @@ export const Navigation = () => {
         </Link>
 
         <nav className='nav-space'>
-          <Link to='./WorkWithUs' className='a-nav'>Inicia sesión</Link>
-          <Link to='./AboutHappyPhone' className='a-nav'>Contacto</Link>
+          <Link to='./Login' className='a-nav'>Inicia sesión</Link>
+          <Link to='./ContactForm' className='a-nav'>Contacto</Link>
         
 
         <Link id="toggleSearchButton" onClick={toggleSearchInput} ><img className='lupa'

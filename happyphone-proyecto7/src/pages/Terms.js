@@ -1,15 +1,16 @@
 // Terms.js
 import React from 'react';
-// import Header from '../components/Header';
-// import Footer from '../components/Footer';
-import './components/terminos.css'; 
+import '../components/terms.css'
+
 
 export const Terms = () => {
   return (
+  
+
     <div className="terms">
         <article className="terms-text">
-          <h2>Términos y Condiciones 2023</h2>
-          <div className="container">
+          <h2 className="h2-terms" >Términos y Condiciones 2023</h2>
+          <div className="container_terms">
             <div className="column">
               <h4>1. Introducción</h4>
               <p>
@@ -62,6 +63,7 @@ export const Terms = () => {
         </article>
     
     </div>
+    
   );
 };
 

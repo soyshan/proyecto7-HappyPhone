@@ -17,14 +17,14 @@ header {
 
 .nav-links {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 header ul {
   display: flex;
   gap: 3rem;
   margin-right: 1rem;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -62,7 +62,7 @@ figure.logo-rrss img {
 /* Estilos específicos para cada sección del main */
 
 main {
-  max-width: 800px;
+  /* max-width: 800px; */
   margin: 20px auto;
   padding: 0 20px;
 }

@@ -23,7 +23,7 @@
   
   .nav-links {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
   
   header ul {
@@ -33,7 +33,7 @@
   
     /* grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: column; */
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
   }
   
@@ -146,7 +146,7 @@
   
   /*TERMINOS & CONDICIONES*/
   
-  .container {
+  .container_terms {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -160,10 +160,12 @@
     margin-bottom: 20px;
   }
   
-  h2 {
+  .h2-terms {
     font-size: 2rem;
     text-align: center;
     padding-top: 30px;
+    text-decoration: none;
+    color:#000
   }
   
   h4 {
@@ -180,57 +182,5 @@
     color: #000000;
     margin-top: 1rem;
     font-weight: lighter;
-  }
-  
-  /*FOOTER*/
-  
-  footer {
-    background-color: #d9d9d9;
-  
-    width: 100%;
-    margin-top: 134px;
-  
-    display: grid;
-    grid-template-columns: 5fr 1fr 5fr;
-  }
-  
-  .about-footer {
-    margin: 1rem;
-    display: grid;
-    justify-content: start;
-  }
-  
-  .about-footer li {
-    display: grid;
-    justify-content: flex-start;
-  }
-  
-  .rrss-footer {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-rrss {
-    width: 60%;
-    margin: 1rem;
-    gap: 0;
-    transition: all 0.3s;
-  }
-  
-  .logo-rrss:hover {
-    transform: scale(1.3);
-  }
-  
-  .info-footer {
-    margin: 1rem;
-  
-    display: grid;
-    justify-content: flex-end;
-  }
-  
-  .info-footer p,
-  li {
-    display: grid;
-    justify-content: flex-end;
   }
   
