@@ -8,7 +8,7 @@ export const Footer = () => {
       <section className="about-footer">
         <ul>
           <p><strong><Link to="/AboutHappyPhone">About HappyPhone</Link></strong></p>
-          <li><Link to="/technicalservice">Servicio Técnico</Link></li>
+          <li><Link to="#">Servicio Técnico</Link></li>
           <li>&copy; 2023 HappyPhone. Todos los derechos reservados.</li>
         </ul>
       </section>
@@ -21,7 +21,7 @@ export const Footer = () => {
 
       <section className="info-footer">
         <ul>
-          <p><strong><Link to="./Equipo">Nuestro Equipo</Link></strong></p>
+          <p><strong><Link to="#">Nuestro Equipo</Link></strong></p>
           <li><Link to="./terms">Términos y condiciones</Link></li>
           <li><Link to="./WorkWithUs">Trabaja con nosotros</Link></li>
         </ul>
