@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import HappyInicio from '../assets/happyinicio.svg';
 import Moviles from '../components/Moviles.js';
 
+
 export const Home = () => {
   const [products, setProducts] = useState([]);
 
@@ -11,7 +12,7 @@ export const Home = () => {
       .then(data => {
         setProducts(data.moviles);
               });    
-    //  NO FUNCIONA LA LLAMADA AL JSON
+    
   }, []);
 
   return (

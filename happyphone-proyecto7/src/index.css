@@ -13,11 +13,15 @@ code {
 }
 
 /* css para el json de la home */
-.container-movil-product{
+.sectionMovilProduct{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 100%;
   flex-wrap: wrap;
+}
+.productMovil{
+  display: flex;
+  flex-direction: row;
 }
 
 .divProductJson{
