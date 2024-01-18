@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import '../css/product.css'
+
 
 export default function MovilUnico() {
   const [movil, setMovil] = useState([]);
@@ -40,7 +41,8 @@ export default function MovilUnico() {
         <button className="add-to-cart" data-product-name="HappyZ Flip">Comprar ya</button>
                 
              <br />
-         <a href="../index.html" className="back-to-catalog">Volver al catálogo</a>
+         <button  className="back-to-catalog"><Link to='#'> Volver al catálogo</Link></button>
+        
     
        </div>
          

@@ -56,7 +56,7 @@
                 <div key={item.id} className="divProductJson">
                   <h2>{item.nombre}</h2>
                   
-                  <img src={`${process.env.PUBLIC_URL}/imgJson/${item.img}`} alt={item.nombre} />
+                  <img src={item.ruta_imagen} alt={item.nombre} />
                   <Link to={`/movil/${item.id}`}>Ver más</Link>
                 </div>
               ))}
