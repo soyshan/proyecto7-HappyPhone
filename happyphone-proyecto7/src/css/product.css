@@ -9,94 +9,6 @@
 
 
 /*HEADER*/
-header {
-  background-color: #D9D9D9;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-
-.nav-links {
-  display: flex;
-  justify-content: end;
-
-}
-/*carrito de compra cantidad*/
-.logo-shoppingcart {
-  width: 40px;
-}
-.cart{
-  position: relative;
-}
-.cart-amount{
-  position: absolute;
-  background-color:red;
-  top: -12px;
-  right: -7px;
-  font-size: 16px;
-  padding: 3px;
-  border-radius: 3px;
-}
-
-header ul {
-  display: flex;
-  gap: 3rem;
-  margin-right: 1rem;
-  justify-content: end;
-  align-items: center;
-}
-
-.menu-section {
-  font-weight: bold;
-  font-size: large;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-
-
-.menu-section:hover {
-  cursor: pointer;
-  color: #297780;
-}
-
-.logo-web {
-  width: 4rem;
-  display: grid;
-  justify-content: start;
-  margin-left: 1rem;
-}
-/**
-*!Carrito de compra cantidad
-**/
-.logo-shoppingcart {
-  width: 40px;
-}
-.cart{
-  position: relative;
-}
-.cart-amount{
-  position: absolute;
-  background-color:red;
-  top: -12px;
-  right: -7px;
-  font-size: 16px;
-  padding: 3px;
-  border-radius: 3px;
-}
-.figure1 img{
-  width: 500px;
-}
-
-figure.logo-rrss img {
-  width: 30px;
-  border: 1px solid black;
-}
 
 
 /*botones*/
@@ -160,12 +72,12 @@ ul {
   padding-bottom: 16px;
 }
 
-.product {
+.container-movil-product {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 94px;
   width: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
@@ -216,6 +128,10 @@ h3:hover {
   justify-content: center;
   text-align: center;
   margin: auto;
+}
+.btn-position{
+  display: flex;
+  flex-direction: row;
 }
 
 .cantidad-input {
