@@ -15,7 +15,7 @@ footer{
   display: grid;
   grid-template-columns: 5fr 1fr 5fr;
   font-size: 14px;
-  
+  margin-bottom: 0px;
 }
 .about-footer{
     display: grid;

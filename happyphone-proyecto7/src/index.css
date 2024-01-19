@@ -12,21 +12,83 @@ code {
     monospace;
 }
 
+.main-image{
+  height: 20rem;
+  margin-left: 5rem;
+  margin-top: 2rem;
+  object-fit: cover;
+  transition: all .5s;
+}
+.main-image:hover{
+  height: 22rem;
+  
+  transition: all .5s;
+}
 /* css para el json de la home */
 .sectionMovilProduct{
   display: flex;
   flex-direction: column;
   max-width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 10rem;
+  
 }
 .productMovil{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  box-shadow: 0 3px 6px 0px #000;
+  padding: 10px;
+  margin: 15px;
 }
+.divMovilProduct{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.linkToReturn{
+  display: inline-block;
+    padding: 8px 20px;
+    background-color: #ffcc00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px 0px #000;
+  }
+
 
 .divProductJson{
   max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.imageJson{
+height: 15rem;
+}
+.imageJson:hover{
+
+    height: 18rem;
+    transition: all .9s;
+  }
+
+.btnPages{
+background-color: #2f8f97;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ccc;
+  padding: 8px;
+  /* height: 15rem; */
+  border-radius: 50rem;
+  font-size: x-large;
+}
+.btnPages:hover {
+  background-color: #2f8e97bf;
+}
+
 
 /* css para el json de la home */
 
@@ -39,12 +101,13 @@ code {
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
+    height: 6rem;
 }
 
-.logo img {
-	height: 60px;
-    display: flex;
-    padding: 10%;
+.logo {
+  height: 5rem;
+  display: flex;
+  padding-left: 3rem;
 }
 .lupa{
 	width: 30px;

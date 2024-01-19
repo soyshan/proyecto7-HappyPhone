@@ -26,7 +26,7 @@ export const Home = () => {
         <article className="main-text">
           <h1>Consigue tu HappyZ Flip con HappyPhone</h1>
           <h4>Aprovecha nuestra oferta de lanzamiento</h4>
-          <Link to ="./Home"><button className="main-button">¡Descúbrelo!</button></Link>
+          <Link to={`/movil/1`}><button className="main-button">¡Descúbrelo!</button></Link>
         </article>
       </main>
 

@@ -97,7 +97,7 @@ export default function MovilUnico() {
     <div className="container-movil-product">
       <div className="description">
         <img src={movil.ruta_imagen} alt={movil.nombre} />
-        <h2>{movil.nombre}</h2>
+        <h2 className="h2ContainerMovilUnico">{movil.nombre}</h2>
         <p>{movil.descripcion}</p>
         <p>{movil.color}</p>
         <p>{movil.precio}€</p>
@@ -120,7 +120,7 @@ export default function MovilUnico() {
       </div>
       <div className="btn-position">
         <button className="add-to-cart" data-product-name="HappyZ Flip">Comprar ya</button>
-        <br />
+        
         <Link to="/" className="back-to-catalog">Volver al catálogo</Link>
       </div>
     </div>
