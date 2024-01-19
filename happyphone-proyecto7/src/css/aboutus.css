@@ -42,11 +42,12 @@ body {
   font-weight: normal;
   line-height: 1.6;
 }
-.bienvenido, .historia, .compromiso, .vision, h2 {
+.h2SectionAboutUs {
   color: #2f686e;
   font-weight: bolder;
   font-style: normal;
   text-decoration: underline;
+
 }
 
 section {

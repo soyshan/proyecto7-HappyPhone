@@ -30,7 +30,7 @@ body {
   font-family: "poppM";
 }
 
-section {
+.sectionWorkWithUs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,14 +102,14 @@ button:hover {
   background-color: #2f8f97;
 }
 
-h2 {
+.h2WorkWithUs {
   font-size: 30px;
   text-align: center;
   align-items: center;
   padding-top: 40px;
 }
 
-p {
+.pWorkWithUs {
   font-size: 20px;
   text-align: center;
   align-items: center;
