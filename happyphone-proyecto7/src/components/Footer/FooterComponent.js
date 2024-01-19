@@ -11,7 +11,7 @@ export const Footer = () => {
       <section className="about-footer">
         <ul>
           <p><strong><Link to="/AboutHappyPhone">About HappyPhone</Link></strong></p>
-          <li><Link to="#">Servicio Técnico</Link></li>
+          <li><Link to="/PasarelaPago">Servicio Técnico</Link></li>
           <li>&copy; 2023 HappyPhone. Todos los derechos reservados.</li>
         </ul>
       </section>

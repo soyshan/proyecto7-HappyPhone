@@ -12,7 +12,7 @@
     src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   }
   
-  main{
+  .mainPasarelaPago{
     font-family: "poppB";
     background-color: #f4f4f4;
     margin: 0;
@@ -21,6 +21,21 @@
     align-items: center;
     height: 100vh;
     text-align: center;
+    display: flex;
+  }
+  .divPasarelaPago {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+    margin: 30px;
+}
+
+  .containerPasarelaPago{
+    display: flex;
+    justify-content: center;
   }
   
   .payment-container {
