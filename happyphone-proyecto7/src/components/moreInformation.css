@@ -14,28 +14,34 @@
 
 
   .galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center; /* Alinea el contenido al centro */
   }
   
   .foto {
+    flex: 0 0 calc(50% - 20px); 
     margin: 10px;
     cursor: pointer;
     perspective: 1000px;
     position: relative;
+    
   }
   
   .equipo-img {
-    width:350px;
+    flex: 0 50 calc(50.333% - 50px);
+    /* width:1347px; */
     height: auto;
     transition: transform 0.5s;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin: 2px;
+    margin-top: 50px;
   }
   
   .descripcion {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 205px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     transform: rotateY(90deg);
@@ -45,6 +51,7 @@
     width: 100%;
     font-size: 14px;
     z-index: 1;
+    width: 500px;
   
   }
   
@@ -56,5 +63,11 @@
     .foto {
         flex: 0 0 calc(33.333% - 20px);
     }
+   
+  .equipo-img {
+    left: 0px;
   }
-  
+  .descripcion {
+    left: 205px; /* Ajusta la posición en pantallas más grandes si es necesario */
+  }
+}

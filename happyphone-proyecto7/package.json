@@ -16,7 +16,6 @@
     "server": "^1.0.38",
     "util": "^0.12.5",
     "web-vitals": "^2.1.4"
-    
   },
   "scripts": {
     "start": "react-scripts start",

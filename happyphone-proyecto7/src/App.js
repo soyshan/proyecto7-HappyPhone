@@ -10,6 +10,7 @@ import { Terms } from './pages/Terms'
 import { Footer }from './components/Footer/FooterComponent';
 import MovilUnico from './components/MovilUnico';
 import { Thanks } from './pages/Thanks';
+import { MoreInformationPage } from './pages/MoreInformationPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='pasarelapago' element={<PasarelaPago />} />
           <Route path='terms' element={<Terms/>} />
           <Route path='Thanks' element={<Thanks/>} />
+          <Route path='more-information' element={<MoreInformationPage/>} />
           
          
 
