@@ -21,7 +21,7 @@ export const Footer = () => {
 
       <section className="info-footer">
         <ul>
-          <p><strong><Link to="#">Nuestro Equipo</Link></strong></p>
+          <p><strong><Link to="./more-information">Nuestro Equipo</Link></strong></p>
           <li><Link to="./terms">Términos y condiciones</Link></li>
           <li><Link to="./WorkWithUs">Trabaja con nosotros</Link></li>
         </ul>
