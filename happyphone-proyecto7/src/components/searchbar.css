@@ -1,0 +1,29 @@
+
+/* searchbar.css */
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input-container {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    width: 30rem;
+    padding-left: 40px; /* Ajusta el padding izquierdo para dejar espacio al icono */
+    margin-left: 15rem;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  

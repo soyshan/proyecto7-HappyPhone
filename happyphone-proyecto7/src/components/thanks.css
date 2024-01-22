@@ -22,13 +22,14 @@
   transform: scale(1.1);
 }
 
-.thanks-text a {
+.thanks-text .contact-link {
   color: #2f8f97;
   text-decoration: none;
   font-weight: bold;
   transform: scale(2.8);
+  margin-left: 170px;
 }
 
-.thanks-text a:hover {
+.thanks-text .contact-link:hover {
   color: #297780;
 }

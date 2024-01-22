@@ -21,7 +21,7 @@ export const Home = () => {
       {/* OFERTA PRINCIPAL */}
       <main className="main-offer" id="main-offer">
         <figure>
-          <Link to="./Home"><img src={HappyInicio} className="main-image" alt="Foto con oferta de móvil de lanzamiento" /></Link>
+          <Link to="/"><img src={HappyInicio} className="main-image" alt="Foto con oferta de móvil de lanzamiento" /></Link>
         </figure>
         <article className="main-text">
           <h1>Consigue tu HappyZ Flip con HappyPhone</h1>

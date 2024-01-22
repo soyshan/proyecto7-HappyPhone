@@ -185,7 +185,7 @@ export function ContactForm() {
           </div>
         </form>
         <div className="form-group">
-          <p>
+          <p className="loginwhatsapp">
             o <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer">Conéctate por WhatsApp </a>
           </p>
         </div>

@@ -80,8 +80,8 @@
 
 
 import React from "react";
-import MoreInformation from "../components/MoreInformation";
-import "../components/moreinformation.css";  // Importa el archivo CSS
+import MoreInformation from "../components/OurTeam/MoreInformation";
+import "../components/OurTeam/moreinformation.css";  // Importa el archivo CSS
 import andreImage from "../assets/equipo/andre.jpeg";
 import daniImage from "../assets/equipo/dani.jpeg";
 import luisImage from "../assets/equipo/luis.jpeg";

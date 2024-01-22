@@ -1,0 +1,114 @@
+/* .productos-lista {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .tarjetas-producto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .tarjeta-producto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+  }
+  
+  .tarjeta-producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .descripcion {
+    color: #555;
+  }
+  
+  .precio {
+    font-weight: bold;
+    color: #e44d26;
+  }
+   */
+
+
+
+   /* En tu archivo CSS */
+.productos-lista {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .tarjetas-producto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: -10px; /* Agrega un margen negativo para contrarrestar el margen de las tarjetas individuales */
+  }
+  
+  .tarjeta-producto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total de la tarjeta */
+  }
+  
+  .tarjeta-producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .descripcion {
+    color: #555;
+  }
+  
+  .precio {
+    font-weight: bold;
+    color: #000000;
+    margin-left: 50px;
+  }
+
+
+  /* En tu archivo CSS */
+.filter-text{
+    margin-left: 50px;
+}
+.filter-button {
+    display: flex;
+    align-items:flex-start;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #2F8F97;
+     /* Ajusta el margen a tu preferencia */
+  }
+  
+ 
+
+  /* Estilo para las opciones del select */
+  .filter-button-select option {
+    background-color: #fff; /* Ajusta el color de fondo a tu preferencia */
+  }
+
+  
+  
+
+
+  /* Estilos adicionales para hacerlo responsive */
+  @media (max-width: 768px) {
+    .tarjeta-producto {
+      width: calc(50% - 20px); /* 50% del ancho del contenedor menos el margen */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .tarjeta-producto {
+      width: calc(100% - 20px); /* 100% del ancho del contenedor menos el margen */
+    }
+  }
+  

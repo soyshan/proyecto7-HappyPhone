@@ -96,7 +96,8 @@ export default function MovilUnico() {
   return (
     <div className="container-movil-product">
       <div className="description">
-        <img src={movil.ruta_imagen} alt={movil.nombre} />
+      
+        <img src={`${process.env.PUBLIC_URL}/imgJson/${movil.ruta_imagen}`}alt={movil.nombre} />
         <h2 className="h2ContainerMovilUnico">{movil.nombre}</h2>
         <p>{movil.descripcion}</p>
         <p>{movil.color}</p>

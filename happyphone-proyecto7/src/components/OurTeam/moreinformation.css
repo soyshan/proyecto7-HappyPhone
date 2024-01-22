@@ -1,15 +1,15 @@
 @font-face {
     font-family: "poppB";
-    src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
+    src: url("../../fonts/poppins/Poppins-Bold.ttf") format("truetype");
   }
   @font-face {
     font-family: "poppR";
-    src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
+    src: url("../../fonts/poppins/Poppins-Regular.ttf") format("truetype");
   }
   
   @font-face {
     font-family: "poppM";
-    src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
+    src: url("../../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   }
 
 
@@ -41,7 +41,7 @@
   .descripcion {
     position: absolute;
     top: 0;
-    left: 205px;
+    left: 140px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     transform: rotateY(90deg);
@@ -51,7 +51,7 @@
     width: 100%;
     font-size: 14px;
     z-index: 1;
-    width: 500px;
+    width: 400px;
   
   }
   
@@ -67,7 +67,7 @@
   .equipo-img {
     left: 0px;
   }
-  .descripcion {
-    left: 205px; /* Ajusta la posición en pantallas más grandes si es necesario */
-  }
+  /* .descripcion {
+    left: 205px;  
+  } */
 }
