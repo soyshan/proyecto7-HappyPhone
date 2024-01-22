@@ -12,23 +12,7 @@
     src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   }
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   
-  html,
-  body {
-    height: 100%;
-  }
-  
-  body {
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    font-family: "poppM";
-  }
   
  
   

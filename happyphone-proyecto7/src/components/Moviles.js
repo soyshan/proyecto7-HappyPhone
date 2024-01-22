@@ -48,24 +48,24 @@ export default function Moviles() {
 
     return(
        
-      <section className="sectionMovilProduct">
-           <h1>Productos</h1>
-              <div className="divMovilProduct" >
-                   <button onClick={handlePrevPage} disabled={currentPage === 0} className="btnPages">{"<"}</button>
+      <section className="section-movil-product">
+           <h1 className="h1-home">Productos</h1>
+              <div className="div-movil-product" >
+                   <button onClick={handlePrevPage} disabled={currentPage === 0} className="btn-pages">{"<"}</button>
                           
-                  <div className="productMovil">
+                  <div className="product-movil">
                   {currentItems.map(item => (
-                  <div key={item.id} className="divProductJson">
+                  <div key={item.id} className="div-product-json">
                     <h2>{item.nombre}</h2>
                     
-                     {<img src={`${process.env.PUBLIC_URL}/imgJson/${item.ruta_imagen}`} alt="Descripción del SVG" className="imageJson"/>}
-                    <Link to={`/movil/${item.id}`} className="linkToReturn">Ver más</Link>
+                     {<img src={`${process.env.PUBLIC_URL}/imgJson/${item.ruta_imagen}`} alt="Descripción del SVG" className="image-json"/>}
+                    <Link to={`/movil/${item.id}`} className="link-to-return">Ver más</Link>
                   </div>
                      ))}
                 </div>
              
              
-             <button onClick={handleNextPage} disabled={(currentPage + 1) * itemsPerPage >= moviles.length} className="btnPages">{">"}</button>
+             <button onClick={handleNextPage} disabled={(currentPage + 1) * itemsPerPage >= moviles.length} className="btn-pages">{">"}</button>
             </div>
 
       </section>
