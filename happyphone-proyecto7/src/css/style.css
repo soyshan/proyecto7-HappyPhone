@@ -105,7 +105,6 @@ a:hover{
     max-height: 100%;
     margin-left: 3rem;
     width: 900px;
-
     object-fit: cover; /*Así conseguimos que la imagen se adapte al recuadro que la contiene*/
     transition: all .5s; /*Así conseguimos que al ampliar la imagen el efecto sea más suave*/
 
