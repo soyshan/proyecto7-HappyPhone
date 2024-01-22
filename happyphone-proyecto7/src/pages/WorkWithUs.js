@@ -38,12 +38,12 @@ export const WorkWithUs = () => {
   return (
     
     <main>
-      <h2 className='h2WorkWithUs'>Trabaja con Nosotros</h2>
-      <p className='pWorkWithUs'>Únete a nuestro equipo y sé parte de HappyPhone.</p>
-      <section className='sectionWorkWithUs'>
-        <div className='container'>
+      <h2 className='h2-work-with-us'>Trabaja con Nosotros</h2>
+      <p className='p-work-with-us'>Únete a nuestro equipo y sé parte de HappyPhone.</p>
+      <section className='section-work-with-us'>
+        <div className='container-work-with-us'>
           
-        <div className="formSection">
+        <div>
               {isSubmitted ? (
                 <div>
                   <h2>¡Formulario enviado!</h2>
@@ -52,7 +52,7 @@ export const WorkWithUs = () => {
               ) : (
                   
                   <form onSubmit={handleSubmit} id="jobApplicationForm" encType="multipart/form-data">
-                      <h3 className="title">Ingresa tus datos</h3>
+                      <h3 className="title-work-with-us">Ingresa tus datos</h3>
                       <label htmlFor="name">Nombre:</label>
                       <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required/>
 
@@ -65,7 +65,7 @@ export const WorkWithUs = () => {
                             <input type="file" id="resume" name="resume" accept=".pdf" onChange={handleChange} required />
                           </div>
 
-                      <button type="submit" >Enviar solicitud</button>
+                      <button className='button-work-with-us' type="submit" >Enviar solicitud</button>
                   </form>
                 )}
         </div>
