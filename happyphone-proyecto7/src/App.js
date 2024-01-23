@@ -32,7 +32,7 @@ function App() {
           <Route path='carrito' element={ <Carrito /> } />
           
         </Routes>
-        <Footer />
+        
         <Footer />
       </BrowserRouter>
     </div>
