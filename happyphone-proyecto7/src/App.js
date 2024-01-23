@@ -11,6 +11,7 @@ import MovilUnico from './components/MovilUnico';
 import { Thanks } from './pages/Thanks';
 import { MoreInformationPage } from './pages/MoreInformationPage';
 import { ProductsList } from './pages/ProductsList';
+import { Carrito } from './pages/Carrito';
 
 function App() {
   return (
@@ -27,10 +28,11 @@ function App() {
           <Route path='terms' element={<Terms/>} />
           <Route path='thanks' element={<Thanks/>} />
           <Route path='more-information' element={<MoreInformationPage/>} />
-
           <Route path='products-list' element={ <ProductsList/> } />
+          <Route path='carrito' element={ <Carrito /> } />
           
         </Routes>
+        <Footer />
         <Footer />
       </BrowserRouter>
     </div>
@@ -38,4 +40,6 @@ function App() {
 }
 
 export default App;
+
+
 

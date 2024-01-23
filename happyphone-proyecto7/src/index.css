@@ -45,8 +45,13 @@ main {
     flex-wrap: nowrap;
     flex-direction: row;
     height: 6rem;
+    height: 6rem;
 }
 
+.logo {
+  height: 5rem;
+  display: flex;
+  padding-left: 3rem;
 .logo {
   height: 5rem;
   display: flex;

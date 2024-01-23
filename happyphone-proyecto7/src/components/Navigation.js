@@ -41,6 +41,11 @@ export const Navigation = () => {
               alt='Carro'
             />
           </Link>
+
+          <Link to='carrito' onClick={redirectToOtraPagina} >
+          <img className='logo-shoppingcart' src={shoppingcart}  alt="Carro" />
+          
+        </Link>
         </nav>
       </header>
 

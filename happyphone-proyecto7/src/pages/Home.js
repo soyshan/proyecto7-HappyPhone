@@ -2,9 +2,24 @@ import React, { useState, useEffect } from 'react';
 import HappyInicio from '../assets/happyinicio.svg';
 import Moviles from '../components/Moviles.js';
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import HappyInicio from '../assets/happyinicio.svg';
+import Moviles from '../components/Moviles.js';
+import { Link } from 'react-router-dom';
 
 
 export const Home = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('./json/catalogo.json')
+      .then(response => response.json())
+      .then(data => {
+        setProducts(data.moviles);
+              });    
+    
+  }, []);
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -29,6 +44,8 @@ export const Home = () => {
           <Link to={`/movil/1`}><button className="main-button-home">¡Descúbrelo!</button></Link>
         </article>
       </main>
+
+      <Moviles />
 
       <Moviles />
 

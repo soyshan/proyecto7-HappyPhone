@@ -76,10 +76,12 @@ ul {
 }
 
 .container-movil-product {
+.container-movil-product {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 94px;
   width: auto;
   display: flex;
+  flex-direction: column;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -96,6 +98,7 @@ ul {
 .h2ContainerMovilUnico {
   font-size: 2rem;
   text-align: center;
+  
   
 }
 
@@ -131,6 +134,10 @@ h3:hover {
   justify-content: center;
   text-align: center;
   margin: auto;
+}
+.btn-position{
+  display: flex;
+  flex-direction: row;
 }
 .btn-position{
   display: flex;
