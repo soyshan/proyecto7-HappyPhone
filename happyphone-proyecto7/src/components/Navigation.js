@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png'; // Importa la imagen del logo
 import shoppingcart from '../assets/shoppingcart.png';
-import SearchBar from './SearchBar';
+// import SearchBar from './SearchBar';
 
 export const Navigation = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ export const Navigation = () => {
           />
         </Link>
 
-        <SearchBar />
+        {/* <SearchBar /> */}
 
         <nav className='nav-space'>
           <Link to='#' className='a-nav'>

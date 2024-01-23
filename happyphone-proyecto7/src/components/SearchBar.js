@@ -99,19 +99,20 @@
 // };
 
 // export default SearchBar;
+// SearchBar.js
+
+
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import lupaIcon from '../assets/busqueda.svg'; // Ajusta la ruta según tu estructura de archivos
 import './searchbar.css'; // Importa los estilos CSS correspondientes
 
-const SearchBar = () => {
-  const navigate = useNavigate();
-
+const SearchBar = ({ onSearch }) => {
   const [valueSearch, setValueSearch] = useState('');
 
   const onSearchSubmit = (e) => {
     e.preventDefault();
-    navigate('/search', { state: valueSearch });
+    onSearch(valueSearch); // Llama a la función onSearch del padre con el término de búsqueda
     setValueSearch('');
   };
 
@@ -143,6 +144,10 @@ const SearchBar = () => {
       </div>
     </form>
   );
+};
+
+SearchBar.propTypes = {
+  onSearch: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

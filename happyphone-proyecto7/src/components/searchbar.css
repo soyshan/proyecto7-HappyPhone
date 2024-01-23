@@ -15,7 +15,8 @@
     border-radius: 30px;
     width: 30rem;
     padding-left: 40px; /* Ajusta el padding izquierdo para dejar espacio al icono */
-    margin-left: 15rem;
+    margin-left: 1rem;
+    margin-top:3rem;
   }
   
   .search-icon {
@@ -26,4 +27,14 @@
     width: 20px;
     height: 20px;
   }
+
   
+@media (max-width: 576px) {
+  .filter-button {
+    margin-left: 0; /* Elimina el margen izquierdo para aprovechar mejor el espacio */
+    margin-top: 10px; /* Ajusta el margen superior según tu preferencia */
+  }
+  .search-input{
+    width:20rem;
+  }
+}
