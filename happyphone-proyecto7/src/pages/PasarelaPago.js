@@ -78,7 +78,7 @@ export function PasarelaPago() {
                     
             <h2>Detalle de Pago</h2>
             <label htmlFor="card-number">Número de Tarjeta:</label>
-            <input type="number" id="card-number" name="cardNumber" placeholder="****************" maxlength="16"  required />
+            <input type="number" id="card-number" name="cardNumber" placeholder="****************"  required />
 
             <label htmlFor="expiry-date">Fecha de Vencimiento:</label>
             <input type="text" id="expiry-date" name="date" placeholder="MM/YY" maxlength="5" required /> 
@@ -89,14 +89,14 @@ export function PasarelaPago() {
             <label htmlFor="name">Titular de la Tarjeta:</label>
             <input type="text" id="name" name="name" placeholder="Nombre y primer Apellido" value={formData.name}  onChange={handleChange}  required />
             
-            <div class="card-icons">
-                <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-cc-mastercard"></i>
-                <i class="fab fa-cc-stripe"></i>
-                <i class="fab fa-cc-paypal"></i>
+            <div className="card-icons">
+                <i className="fab fa-cc-visa"></i>
+                <i className="fab fa-cc-mastercard"></i>
+                <i className="fab fa-cc-stripe"></i>
+                <i className="fab fa-cc-paypal"></i>
             </div>
 
-            <button type="submit" onclick="processPayment()">Pagar</button>
+            <button type="submit" >Pagar</button>
         </form>
 
         )}

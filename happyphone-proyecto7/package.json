@@ -9,12 +9,12 @@
     "json": "^11.0.0",
     "json-server": "^1.0.0-alpha.21",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.2",
     "react-scripts": "5.0.1",
     "server": "^1.0.38",
     "web-vitals": "^2.1.4"
-    
   },
   "scripts": {
     "start": "react-scripts start",

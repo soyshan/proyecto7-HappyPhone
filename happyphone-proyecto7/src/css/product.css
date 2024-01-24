@@ -1,14 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
-  font-family: 'Playpen Sans', cursive;
-  font-family: 'Poppins', sans-serif;
-}
-
-
-/*HEADER*/
 
 
 /*botones*/
@@ -222,4 +212,59 @@ h3:hover {
     height: 30px; /* Alto de los botones */
     font-size: 20px; /* Tamaño de la fuente */
   }
+}
+
+
+
+
+/*FOOTER*/
+
+footer {
+  background-color: #d9d9d9;
+
+  width: 100%;
+  margin-top: 230px;
+
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+}
+
+.about-footer {
+  margin: 1rem;
+  display: grid;
+  justify-content: start;
+}
+
+.about-footer li {
+  display: grid;
+  justify-content: flex-start;
+}
+
+.rrss-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-rrss {
+  width: 60%;
+  margin: 1rem;
+  gap: 0;
+  transition: all 0.3s;
+}
+
+.logo-rrss:hover {
+  transform: scale(1.3);
+}
+
+.info-footer {
+  margin: 1rem;
+
+  display: grid;
+  justify-content: flex-end;
+}
+
+.info-footer p,
+li {
+  display: grid;
+  justify-content: flex-end;
 }

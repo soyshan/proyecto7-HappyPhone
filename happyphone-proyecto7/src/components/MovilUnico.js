@@ -93,10 +93,19 @@ export default function MovilUnico() {
       });
   }, [id]);
 
+  const añadirAlCarrito = () => {
+    const productoParaAñadir = { ...movil, cantidad };
+    let carritoActual = JSON.parse(localStorage.getItem('carrito')) || [];
+    carritoActual.push(productoParaAñadir);
+    localStorage.setItem('carrito', JSON.stringify(carritoActual));
+    // Aquí puedes añadir alguna notificación o redirección si lo deseas
+  };
+  
+
   return (
     <div className="container-movil-product">
       <div className="description">
-        <img src={movil.ruta_imagen} alt={movil.nombre} />
+      <img src={`${process.env.PUBLIC_URL}/imgJson/${movil.ruta_imagen}`}alt={movil.nombre} />
         <h2>{movil.nombre}</h2>
         <p>{movil.descripcion}</p>
         <p>{movil.color}</p>
@@ -108,7 +117,6 @@ export default function MovilUnico() {
         <p>{movil.firstCamera}</p>
       </div>
       <div className="cantidad">
-        <button className="btn btn-decrementar">-</button>
         <input
           type="number"
           className="cantidad-input"
@@ -116,10 +124,9 @@ export default function MovilUnico() {
           onChange={(e) => handleInputChange(e.target.value)}
           min="1"
         />
-        <button className="btn btn-incrementar">+</button>
       </div>
       <div className="btn-position">
-        <button className="add-to-cart" data-product-name="HappyZ Flip">Comprar ya</button>
+        <button className="add-to-cart" data-product-name="HappyZ Flip" onClick={añadirAlCarrito}>Comprar ya</button>
         <br />
         <Link to="/" className="back-to-catalog">Volver al catálogo</Link>
       </div>
