@@ -11,6 +11,7 @@ import { Terms } from './pages/Terms'
 import { Footer }from './components/Footer/FooterComponent';
 import MovilUnico from './components/MovilUnico';
 import { Thanks } from './pages/Thanks';
+import { Login } from './pages/Login'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='terms' element={<Terms/>} />
           {/* <Route path='equipo' element={<Equipo/>} /> */}
           <Route path='Thanks' element={<Thanks/>} />
+          <Route path='login' element={<Login />} />
           
          
 
