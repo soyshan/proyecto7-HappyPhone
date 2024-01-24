@@ -13,14 +13,14 @@ export const Footer = () => {
       <section className="about-footer">
         <ul>
           <p><strong><Link to="/AboutHappyPhone">About HappyPhone</Link></strong></p>
-          <li><Link to="/PasarelaPago">Servicio Técnico</Link></li>
+          <li><Link to="/TechnicalService">Servicio Técnico</Link></li>
           <li>&copy; 2023 HappyPhone. Todos los derechos reservados.</li>
         </ul>
       </section>
 
       <figure className="rrss-footer">
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={Instagram} alt="logo_instagram" /></a>
-        <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={logowhatsapp} alt="logo_tiktok" /></a>
+        <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank" rel="noopener noreferrer"><img className="logo-rrss-whatsapp" src={logowhatsapp} alt="logo_tiktok" /></a>
         <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={logofacebook} alt="logo_youtube" /></a>
       </figure>
 
@@ -34,5 +34,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
-

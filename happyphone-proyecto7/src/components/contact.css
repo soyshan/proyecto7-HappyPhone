@@ -3,7 +3,7 @@
 
   
   /*CONTACTO*/
-  .contacto {
+  .contacto{
     display: flex;
     justify-content: center;
     padding: 43px -7px 10px 97px;
@@ -120,8 +120,8 @@
   
   /* Estilos para el botón de registro */
   .botons {
-    background-color: #2f8f97;
-    border: #2f8f97;
+    background-color: #6bb39b;
+    border: #6bb39b;
     width: 5rem;
     height: 2.5rem;
     border-radius: 13px;
@@ -132,7 +132,7 @@
   /* Estilos para el enlace de términos y condiciones */
   .form-group a {
     text-decoration: none;
-    color: #2f8f97;
+    color: #6bb39b;
   }
   
   /* Estilos para el checkbox de términos y condiciones */

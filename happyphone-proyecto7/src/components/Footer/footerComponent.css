@@ -40,16 +40,23 @@ ul{
 }
 
 .logo-rrss{
-  width: 90%;
+  width: 140%;
   margin: 1rem;
   gap:0;
   transition: all .3s;
   
 }
-
-.logo-rrss:hover{
+.logo-rrss-whatsapp{
+  width: 60%;
+  margin-left:50%;
+  gap:0;
+  transition: all .3s;
+  
+}
+.logo-rrss-whatsapp:hover{
   transform: scale(1.3); 
 }
+
 
 .logo-rrss:hover{
   transform: scale(1.3); 
@@ -74,12 +81,10 @@ a{
 }
 
 a:hover{
-  color:#daf3ea
+  color:#85e6c0
 }
 
 .menu-section:hover{
   cursor: pointer;
   color: #297780;
 }
-
-

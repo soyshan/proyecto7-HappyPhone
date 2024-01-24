@@ -3,11 +3,6 @@
 /*HEADER*/
 
 /*carrito de compra cantidad*/
-.logo-shoppingcart {
-  position: absolute;
-  margin-top: 20px;
-  margin-left: -73px;
-}
 
 .cart-amount {
   position: absolute;

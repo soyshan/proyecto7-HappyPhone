@@ -64,7 +64,7 @@ a{
 }
 
 a:hover{
-    color:#2F8F97;
+    color:#6bb39b;
 }
 
 .menu-section:hover{
@@ -145,7 +145,7 @@ h1{
 h4{
     font-size: 2rem;
     text-align: center;
-    color: #2F8F97;
+    color: #6bb39b;
     /* margin-top: -3rem; */
 }
 
@@ -153,8 +153,8 @@ h4{
     width: 90%;
     height: 2rem;
     margin: 15px;
-    background-color: #2F8F97;
-    border: #2F8F97;
+    background-color: #6bb39b;
+    border: #6bb39b;
     border-radius: 10px;
     box-shadow: 0 3px 6px 0px #000; /*Sombra de los botones*/
     color: #ffff;
@@ -219,8 +219,8 @@ article.product:hover{
 }
 
 .info-product button{
-    background-color: #2F8F97;
-    border: #2F8F97;
+    background-color: #6bb39b;
+    border: #6bb39b;
     border-radius: 5px;
     box-shadow:0 3px 5px 0px #000;
     color: #ffff;

@@ -15,8 +15,10 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+}
 
+.App{
+background-color: #f7f4e8;
 }
 
 html,
@@ -44,9 +46,7 @@ main {
     background-color: #0b0b0d;
     align-content: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
     flex-direction: row;
-    height: 6rem;
     height: 6rem;
 }
 
@@ -139,8 +139,8 @@ main {
 
 .main-button-home {
   height: 5rem;
-  background-color: #2f8f97;
-  border: #2f8f97;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -192,10 +192,10 @@ main {
     } 
 
     .link-to-return{
-  display: inline-block;
+    display: inline-block;
     padding: 8px 20px;
     background-color: #6bb39b;
-    color: #000000;
+    color: #f7f4e8;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -203,7 +203,7 @@ main {
   }
 
   .btn-pages{
-    background-color: #2f8f97;
+    background-color: #6bb39b;
       color: #fff;
       cursor: pointer;
       transition: background-color 0.3s ease;

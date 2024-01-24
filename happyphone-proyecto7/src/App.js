@@ -12,6 +12,7 @@ import { Thanks } from './pages/Thanks';
 import { MoreInformationPage } from './pages/MoreInformationPage';
 import { ProductsList } from './pages/ProductsList';
 import { Carrito } from './pages/Carrito';
+import { TechnicalService } from './pages/TechnicalService';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
           <Route path='more-information' element={<MoreInformationPage/>} />
           <Route path='products-list' element={ <ProductsList/> } />
           <Route path='carrito' element={ <Carrito /> } />
+          <Route path='technicalservice' element={ <TechnicalService /> } />
+          
           
         </Routes>
         
@@ -40,6 +43,3 @@ function App() {
 }
 
 export default App;
-
-
-
