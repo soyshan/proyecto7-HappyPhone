@@ -28,6 +28,7 @@ footer{
 .about-footer li{
   display: grid;
   justify-content:flex-start;
+  color:#f7f4e8;
 }
 
 ul{
@@ -69,11 +70,11 @@ ul{
  
 a{
   text-decoration: none;
-  color: #000; 
+  color: #f7f4e8; 
 }
 
 a:hover{
-  color:#7d7d7d;
+  color:#daf3ea
 }
 
 .menu-section:hover{

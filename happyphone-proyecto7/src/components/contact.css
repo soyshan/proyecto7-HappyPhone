@@ -33,9 +33,9 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 15px;
+    margin: 5%;
     width: 425px;
-    height: 65hv;
+    height: 39rem;
   }
   
   
@@ -123,7 +123,7 @@
     background-color: #2f8f97;
     border: #2f8f97;
     width: 5rem;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 13px;
     box-shadow: 0 3px 6px 0px #000;
     color: #ffff;
@@ -143,7 +143,7 @@
   /* Estilos en hover para el botón */
   .botons:hover {
     cursor: pointer;
-    background-color: #297780;
+    background-color: #2c7575;
     transform: scale(1.1);
     transition: all 0.5s;
   }
