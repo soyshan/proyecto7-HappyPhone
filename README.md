@@ -1,10 +1,10 @@
-# HappyPhone <img  src="./src/assets/logo.png" width="60" height="70">
+# HappyPhone <img  src="./happyphone-proyecto7/src/assets/logo.png" width="60" height="70">
 
 E-commerce created to sell mobile phones.
 
 Proyecto innovador de **Happy Mobiles**, enfocado en presentar y distribuir una línea exclusiva de teléfonos móviles que redefinen la experiencia del usuario. Ofrecemos dispositivos con diseño vanguardista, tecnología avanzada y opciones de personalización, priorizando una experiencia única para nuestros usuarios.
 
-![imágen de un HappyPhone](./public/imgJson/happy.svg )
+![imágen de un HappyPhone](./happyphone-proyecto7/public/imgJson/happy.svg )
 
 ## Tabla de Contenidos
 
