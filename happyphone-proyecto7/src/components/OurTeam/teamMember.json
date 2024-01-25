@@ -1,0 +1,25 @@
+{
+  "teamMembers":[
+    {
+      "id": 1,
+      "imgSrc": "naty.jpeg",
+      "description": "La exploración constante de nuevos horizontes digitales y la pasión por el desarrollo web y la ciberseguridad definen a Andrea. En su viaje de reinvención profesional, se sumerge en líneas de código mientras encuentra equilibrio explorando la naturaleza, practicando yoga y descubriendo tesoros en nuevos lugares. Su risa ilumina cualquier espacio, llevando consigo la nobleza de lágrimas que expresan alegría y profundidad emocional. La vida, para ella, es llenar cada momento con risas, descubrimientos y emociones genuinas."
+    },
+    {
+      "id": 2,
+      "imgSrc": "shan.jpeg",
+      "description": "La exploración constante de nuevos horizontes digitales y la pasión por el desarrollo web y la ciberseguridad definen a Andrea. En su viaje de reinvención profesional, se sumerge en líneas de código mientras encuentra equilibrio explorando la naturaleza, practicando yoga y descubriendo tesoros en nuevos lugares. Su risa ilumina cualquier espacio, llevando consigo la nobleza de lágrimas que expresan alegría y profundidad emocional. La vida, para ella, es llenar cada momento con risas, descubrimientos y emociones genuinas."
+    },
+    {
+      "id": 3,
+      "imgSrc": "erwin.jpeg",
+      "description": "La exploración constante de nuevos horizontes digitales y la pasión por el desarrollo web y la ciberseguridad definen a Andrea. En su viaje de reinvención profesional, se sumerge en líneas de código mientras encuentra equilibrio explorando la naturaleza, practicando yoga y descubriendo tesoros en nuevos lugares. Su risa ilumina cualquier espacio, llevando consigo la nobleza de lágrimas que expresan alegría y profundidad emocional. La vida, para ella, es llenar cada momento con risas, descubrimientos y emociones genuinas."
+    },
+    {
+      "id": 4,
+      "imgSrc":"ramesh.jpeg",
+      "description": "La exploración constante de nuevos horizontes digitales y la pasión por el desarrollo web y la ciberseguridad definen a Andrea. En su viaje de reinvención profesional, se sumerge en líneas de código mientras encuentra equilibrio explorando la naturaleza, practicando yoga y descubriendo tesoros en nuevos lugares. Su risa ilumina cualquier espacio, llevando consigo la nobleza de lágrimas que expresan alegría y profundidad emocional. La vida, para ella, es llenar cada momento con risas, descubrimientos y emociones genuinas."
+    }
+  ]
+
+}

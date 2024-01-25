@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import Instagram from '../../assets/instagram.svg';
 // import TikTok from '../../assets/tiktok.svg';
 // import Youtube from '../../assets/youtube.svg';
-import logofacebook from '../../assets/facebook.svg';
-import logowhatsapp from '../../assets/whatsapp.png';
+import logoyoutube from '../../assets/youtube.svg';
+import logotiktok from '../../assets/tiktok.svg';
 
 export const Footer = () => {
   return (
@@ -20,8 +20,8 @@ export const Footer = () => {
 
       <figure className="rrss-footer">
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={Instagram} alt="logo_instagram" /></a>
-        <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank" rel="noopener noreferrer"><img className="logo-rrss-whatsapp" src={logowhatsapp} alt="logo_tiktok" /></a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={logofacebook} alt="logo_youtube" /></a>
+        <a href="https://www.tiktok.com/login?lang=es&redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={logotiktok} alt="logo_tiktok" /></a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img className="logo-rrss" src={logoyoutube} alt="logo_youtube" /></a>
       </figure>
 
       <section className="info-footer">

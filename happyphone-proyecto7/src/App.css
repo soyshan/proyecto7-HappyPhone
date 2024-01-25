@@ -126,6 +126,8 @@ h4 {
 
   background-color: #6bb39b;
   border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -161,6 +163,8 @@ article.product:hover {
 }
 
 .info-product button {
+  background-color: #6bb39b;
+  border: #6bb39b;
   background-color: #6bb39b;
   border: #6bb39b;
   border-radius: 5px;
