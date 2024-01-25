@@ -142,7 +142,7 @@ export const ProductsList = () => {
                 className="imagen-producto"
               />
               <h3>{producto.nombre}</h3>
-              <p className="descripcion">{producto.descripcion}</p>
+            
               <p className="precio">Precio: ${producto.precio}</p>
             </div>
           </Link>
