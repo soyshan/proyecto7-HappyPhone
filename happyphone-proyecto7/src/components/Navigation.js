@@ -3,6 +3,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import hamburguer from '../assets/hamburguer.png';
 import shoppingcart from '../assets/shoppingcart.png';
+// import SearchBar from './SearchBar';
 
 export const Navigation = () => {
   const navigate = useNavigate();

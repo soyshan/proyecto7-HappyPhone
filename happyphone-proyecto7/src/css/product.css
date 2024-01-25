@@ -66,14 +66,15 @@
   transform: scale(1.1); /*Así ampliamos la imagen*/
 }
 
-ul {
+/* ul {
   list-style: none;
   display: grid;
   align-items: center;
   justify-items: center;
   padding-top: 30px;
   padding-bottom: 16px;
-}
+} */
+
 
 .container-movil-product {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

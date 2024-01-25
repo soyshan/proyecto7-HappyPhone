@@ -2,8 +2,6 @@ import React from 'react';
 import './footerComponent.css';
 import { Link } from 'react-router-dom';
 import Instagram from '../../assets/instagram.svg';
-// import TikTok from '../../assets/tiktok.svg';
-// import Youtube from '../../assets/youtube.svg';
 import logoyoutube from '../../assets/youtube.svg';
 import logotiktok from '../../assets/tiktok.svg';
 
@@ -11,10 +9,10 @@ export const Footer = () => {
   return (
     <footer>
       <section className="about-footer">
-        <ul>
+        <ul className="footer-list">
           <p><strong><Link to="/AboutHappyPhone">About HappyPhone</Link></strong></p>
           <li><Link to="/TechnicalService">Servicio Técnico</Link></li>
-          <li>&copy; 2023 HappyPhone. Todos los derechos reservados.</li>
+          <li>&copy; 2024 HappyPhone. Todos los derechos reservados.</li>
         </ul>
       </section>
 
@@ -25,7 +23,7 @@ export const Footer = () => {
       </figure>
 
       <section className="info-footer">
-        <ul>
+        <ul className="footer-list">
           <p><strong><Link to="more-information">Nuestro Equipo</Link></strong></p>
           <li><Link to="./terms">Términos y condiciones</Link></li>
           <li><Link to="./WorkWithUs">Trabaja con nosotros</Link></li>

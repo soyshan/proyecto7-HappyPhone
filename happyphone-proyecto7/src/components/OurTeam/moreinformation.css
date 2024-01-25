@@ -11,103 +11,26 @@
     font-family: "poppM";
     src: url("../../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   }
-
-/* 
-  .galeria {
-    text-align: center; /* Alinea el contenido al centro */
- 
-  
-  /* .foto {
-    flex: 0 0 calc(50% - 20px); 
-    margin: 10px;
-    cursor: pointer;
-    perspective: 1000px;
-    position: relative;
-    
-  }
-  
-  .equipo-img {
-    flex: 0 50 calc(50.333% - 50px);
- 
-    height: auto;
-    transition: transform 0.5s;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    margin: 2px;
-    margin-top: 50px;
-  }
-  
-  .descripcion {
-    position: absolute;
-    top: 0;
-    left: 140px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    transform: rotateY(90deg);
-    transform-origin: 0 0;
-    transition: transform 0.5s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    font-size: 14px;
-    z-index: 1;
-    width: 400px;
-  
-  }
-  
-  .foto:hover .descripcion {
-    transform: rotateY(0deg);
-  }
-  
-  @media screen and (min-width: 768px) {
-    .foto {
-        flex: 0 0 calc(33.333% - 20px);
-    }
-   
-  .equipo-img {
-    left: 0px;
-  }
-
-}  */
-
-
-@font-face {
-  font-family: "poppB";
-  src: url("../../fonts/poppins/Poppins-Bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "poppR";
-  src: url("../../fonts/poppins/Poppins-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "poppM";
-  src: url("../../fonts/poppins/Poppins-Medium.ttf") format("truetype");
-}
-
-.h1-our-team{
-  align-items: center;
-  margin-left: 40rem;
+.h1-our-team {
+  text-align: center;
   margin-top: 3rem;
+  font-family: "poppB";
 }
 
 .equipo-img-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
-  gap: 8rem;
-  justify-content: center; /* Alinea el contenido al centro horizontalmente */
-  width:30%;
-  margin:3rem;
-  margin-left: 35rem;
-  margin-right:10rem;
+  gap: 2rem; /* Ajusta según sea necesario */
+  justify-content: center;
+  width: 80%; /* Ajusta según sea necesario */
+  margin: 3rem auto;
 }
 
 .equipo-img-item {
   position: relative;
-  /* overflow: hidden; */
-  text-align: center; /* Alinea el contenido al centro horizontalmente */
+  text-align: center;
+  
 }
 
 .equipo-img {
@@ -116,36 +39,33 @@
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
+.equipo-img-item:hover .equipo-img {
+  transform: scale(1.1); /* Ajusta el valor según sea necesario */
+  transition: transform 0.3s ease;
+}
 
 .descripcion-overlay {
   position: absolute;
-  top: 5%;
-  left: -10%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
-  height: 20rem;
-  max-width: 50rem; /* Mismo ancho que la imagen */
-  width:20rem;
+  width: 80%; /* Ajusta según sea necesario */
+  max-width: 400px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-.equipo-img-item.hovered .descripcion-overlay {
+.equipo-img-item:hover .descripcion-overlay {
   opacity: 1;
 }
 
 .descripcion-overlay.show {
   opacity: 1;
-  transform: rotateY(0deg);
+  transform: translate(-50%, -50%);
 }
 
 .descripcion-overlay.hide {
   opacity: 0;
-  transform: rotateY(90deg);
-}
-
-.equipo-img-item:hover .descripcion {
-  transform: rotateY(0deg);
 }
 
 .descripcion {
@@ -156,28 +76,29 @@
   border-radius: 8px;
   transition: transform 0.5s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 80%; /* Ajusta según sea necesario */
-  max-height: 200px; /* Ajusta según sea necesario */
-  overflow-y: auto; /* Añade desplazamiento vertical */
+  width: 80%;
+  max-height: 200px;
+  overflow-y: auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(50%, 30%) rotateY(10deg);
+  transform: translate(-50%, -50%) rotateY(10deg);
   transform-origin: 0 0;
   z-index: 1;
 }
 
-.equipo-img-item:hover .equipo-img {
-  transform: scale(1.2); /* Puedes ajustar el valor según sea necesario */
-}
-
-
-
 @media screen and (max-width: 768px) {
   .equipo-img-container {
     grid-template-columns: 1fr;
-    margin-left:10rem;
+  }
+
+  .descripcion-overlay {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+
+  .descripcion {
+    transform: translate(-50%, 0) rotateY(10deg);
   }
 }
-
-

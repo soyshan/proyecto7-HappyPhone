@@ -9,73 +9,84 @@
 }
 
 
-footer{
+
+/* footerComponent.css */
+
+footer {
   background-color: #0b0b0d;
-  width: 100%;
   display: grid;
-  grid-template-columns: 5fr 1fr 5fr;
-  font-size: 14px;
-  margin-bottom: 0px;
-
-
+  grid-template-areas:
+    "about"
+    "social"
+    "info";
+  gap: 20px;
+  padding: 20px;
+  color: #f7f4e8;
+  text-align: center;
 }
-.about-footer{
+.footer-list{
+  
+    list-style: none;
     display: grid;
-    justify-content:start;
-    padding-left: 2%;
+    align-items: center;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  
+
+}
+.about-footer,
+.rrss-footer,
+.info-footer {
+  list-style-type: none;
+  margin: 0;
 }
 
-.about-footer li{
-  display: grid;
-  justify-content:flex-start;
-  color:#f7f4e8;
-}
-
-ul{
-  padding-inline-start: 0px;}
-
-.rrss-footer{
-  display: flex;
-  align-items: center;
-}
-
-.logo-rrss{
+.logo-rrss {
   width: 3rem;
   margin: 0.5rem;
-  gap:0;
-  transition: all .3s;
-  
+  transition: all 0.3s;
+  margin-top: 3rem;
 }
 
-
-
-.logo-rrss:hover{
-  transform: scale(1.3); 
+.logo-rrss:hover {
+  transform: scale(1.3);
 }
 
-.info-footer{
-  padding-right: 5%;
-  display: grid;
-  justify-content:flex-end;
-  font-family: 'poppR';
-}
-
-.info-footer p,li{
-  display: grid;
-  justify-content:flex-end;
-  font-family: 'poppR';
-}
- 
-a{
+a {
   text-decoration: none;
-  color: #f7f4e8; 
+  color: #f7f4e8;
 }
 
-a:hover{
-  color:#85e6c0
+a:hover {
+  color: #85e6c0;
 }
 
-.menu-section:hover{
-  cursor: pointer;
-  color: #297780;
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  footer {
+    grid-template-areas:
+      "about"
+      "social"
+      "info";
+  }
+}
+
+/* Media query para pantallas medianas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  footer {
+    grid-template-areas:
+      "about social"
+      "info info";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media query para pantallas grandes */
+@media screen and (min-width: 1024px) {
+  footer {
+    grid-template-areas:
+      "about social info";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
