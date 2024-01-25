@@ -221,6 +221,9 @@ main {
     transition: background-color 0.3s ease;
     box-shadow: 0 3px 6px 0px #000;
   }
+  .link-to-return:hover{ 
+    background-color: #0b0b0d;
+  }
 
   .btn-pages{
     background-color: #6bb39b;

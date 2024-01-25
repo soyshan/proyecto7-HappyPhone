@@ -129,6 +129,7 @@
     color: #ffff;
   }
   
+  
   /* Estilos para el enlace de términos y condiciones */
   .form-group a {
     text-decoration: none;
@@ -143,8 +144,9 @@
   /* Estilos en hover para el botón */
   .botons:hover {
     cursor: pointer;
-    background-color: #2c7575;
+    background-color: #0b0b0d;
     transform: scale(1.1);
     transition: all 0.5s;
+    color: #6bb39b;
   }
   
