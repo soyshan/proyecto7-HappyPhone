@@ -1,109 +1,109 @@
 
 
-  .filter-button {
-    display: flex;
-    align-items: center;
-    margin-left: 20px; /* Ajusta el margen a tu preferencia */
-    color: #6bb39b;
-  }
-  
+.filter-button {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Ajusta el margen a tu preferencia */
+  color: #6bb39b;
+}
+
 
 
 .productos-lista {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
 }
-  
-
-  .search-and-filter {
-    
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  .tarjetas-producto {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: -10px; /* Agrega un margen negativo para contrarrestar el margen de las tarjetas individuales */
-  }
-  
-  .tarjeta-producto {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 1rem;
-    width: 250px;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total de la tarjeta */
-  }
-  
-  .tarjeta-producto img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-  }
-  
-  .descripcion {
-    color: #555;
-  }
-  
-  .precio {
-    font-weight: bold;
-    color: #000000;
-    margin-left: 50px;
-  }
 
 
-  /* En tu archivo CSS */
+.search-and-filter {
+  
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tarjetas-producto {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: -10px; /* Agrega un margen negativo para contrarrestar el margen de las tarjetas individuales */
+}
+
+.tarjeta-producto {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 1rem;
+  width: 250px;
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total de la tarjeta */
+}
+
+.tarjeta-producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.descripcion {
+  color: #555;
+}
+
+.precio {
+  font-weight: bold;
+  color: #000000;
+  margin-left: 50px;
+}
+
+
+/* En tu archivo CSS */
 .filter-text{
-  margin-left: 3rem;
+margin-left: 3rem;
 }
 .filter-button {
-    display: flex;
-    align-items:flex-start;
-    margin-left: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #6bb39b;
-     /* Ajusta el margen a tu preferencia */
+  display: flex;
+  align-items:flex-start;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #6bb39b;
+   /* Ajusta el margen a tu preferencia */
+}
+
+
+
+/* Estilo para las opciones del select */
+.filter-button-select option {
+  background-color: #fff; /* Ajusta el color de fondo a tu preferencia */
+}
+
+
+
+
+
+/* Estilos adicionales para hacerlo responsive */
+@media (max-width: 768px) {
+  .tarjeta-producto {
+    width: calc(50% - 20px); /* 50% del ancho del contenedor menos el margen */
   }
-  
- 
+}
 
-  /* Estilo para las opciones del select */
-  .filter-button-select option {
-    background-color: #fff; /* Ajusta el color de fondo a tu preferencia */
+@media (max-width: 576px) {
+  .tarjeta-producto {
+    width: calc(100% - 20px); /* 100% del ancho del contenedor menos el margen */
   }
 
-  
-  
-
-
-  /* Estilos adicionales para hacerlo responsive */
-  @media (max-width: 768px) {
-    .tarjeta-producto {
-      width: calc(50% - 20px); /* 50% del ancho del contenedor menos el margen */
-    }
+  .search-input-container {
+    width: 100%; /* Ajusta el ancho del contenedor para pantallas más pequeñas */
   }
-  
-  @media (max-width: 576px) {
-    .tarjeta-producto {
-      width: calc(100% - 20px); /* 100% del ancho del contenedor menos el margen */
-    }
 
-    .search-input-container {
-      width: 100%; /* Ajusta el ancho del contenedor para pantallas más pequeñas */
-    }
-  
-    .search-input {
-      width: 100%; /* Hace que el campo de búsqueda ocupe todo el ancho disponible */
-      margin-left: 0; /* Elimina el margen izquierdo para aprovechar mejor el espacio */
-    }
-  
-    .search-icon {
-      display: none; /* O ajusta su tamaño o posición para pantallas más pequeñas según tu preferencia */
-    }
+  .search-input {
+    width: 100%; /* Hace que el campo de búsqueda ocupe todo el ancho disponible */
+    margin-left: 0; /* Elimina el margen izquierdo para aprovechar mejor el espacio */
   }
- 
+
+  .search-icon {
+    display: none; /* O ajusta su tamaño o posición para pantallas más pequeñas según tu preferencia */
+  }
+}
+

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../components/thanks.css'
-import '../components/thanks.css'
 import { Link } from 'react-router-dom';
 import checkImage from '../assets/check.png';
 
@@ -15,7 +14,7 @@ export const Thanks = () => {
         <h2>¡GRACIAS POR TU SOLICITUD!</h2>
         <h3>Tu solicitud ha sido recibida.</h3>
          <Link to="/ContactForm" className="contact-link" target="_self">Contáctanos </Link>
-         <Link to="/ContactForm" className="contact-link" target="_self">Contáctanos </Link>
+      
       </article>
     </main>
   );
