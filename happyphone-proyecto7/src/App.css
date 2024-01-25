@@ -12,7 +12,6 @@
 
 header {
   background-color: #0b0b0d;
-  background-color: #0b0b0d;
   width: 100%;
   height: 5rem;
   display: flex;
@@ -45,7 +44,6 @@ header ul {
 
 a {
   text-decoration: none;
-  color: #f7f4e8;
   color: #f7f4e8;
 }
 
@@ -128,6 +126,8 @@ h4 {
 
   background-color: #6bb39b;
   border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -144,22 +144,10 @@ h4 {
   background-color: #85e6c0;
 }
 
-/*CAROUSEL*/
 
-.carousel-products {
-
-  padding: 3rem;
-  padding-bottom: 5rem;
-  text-align: center;
-  gap: 3.5rem;
-
-  display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
-  grid-auto-flow: column;
-}
 
 article.product {
-  /* border: 0.5px solid rgb(236, 233, 233); */
+
   padding-bottom: 1rem;
 }
 
@@ -177,6 +165,8 @@ article.product:hover {
 .info-product button {
   background-color: #6bb39b;
   border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 5px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -189,8 +179,7 @@ article.product:hover {
 .info-product button:hover {
   cursor: pointer;
   background-color: #85e6c0;
-  background-color: #85e6c0;
-
+  
 }
 
 article.product figure {
@@ -445,7 +434,3 @@ p {
   color: #000000;
   margin-top: 1rem;
 }
-
-
-
-
