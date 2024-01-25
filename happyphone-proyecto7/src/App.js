@@ -12,6 +12,7 @@ import { Thanks } from './pages/Thanks';
 import { MoreInformationPage } from './pages/MoreInformationPage';
 import { ProductsList } from './pages/ProductsList';
 import { Carrito } from './pages/Carrito';
+import { CarritoList } from './pages/CarritoList';
 
 function App() {
   return (

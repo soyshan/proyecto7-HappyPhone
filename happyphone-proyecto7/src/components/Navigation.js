@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png'; // Importa la imagen del logo
 import shoppingcart from '../assets/shoppingcart.png';
 // import SearchBar from './SearchBar';
 
 export const Navigation = () => {
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const redirectToOtraPagina = () => {
     // Lógica para redirigir a otra página al hacer clic en el botón con la imagen del carro
