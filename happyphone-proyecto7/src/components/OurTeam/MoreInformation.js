@@ -69,21 +69,24 @@
 // components/OurTeam/MoreInformation.js
 import React, { useState, useEffect } from "react";
 
-const MoreInformation = () => {
+export default function MoreInformation() {
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
-    fetch('/json/teamMembers.json')  // La barra inicial indica la raíz del servidor
-      .then(response => response.json())
-      .then(datos => {
-        setTeamMembers(datos);
-      })
-      .catch(error => {
-        console.error('Error:', error.message);
-      });
+    const json =
+    async ()=> {
+    try{
+    const response = await fetch ('../..public/json/teamMember.json')
+    const data = await response.json()
+    
+  }
+  catch (error){
+    console.error ('Error:', error.message);
+  }
+}
   }, []);
 
-
+json()
 
   return (
     <section className="section-team-members">
@@ -102,4 +105,3 @@ const MoreInformation = () => {
   );
 };
 
-export default MoreInformation;

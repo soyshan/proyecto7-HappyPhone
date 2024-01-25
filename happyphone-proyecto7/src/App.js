@@ -13,6 +13,8 @@ import { MoreInformationPage } from './pages/MoreInformationPage';
 import { ProductsList } from './pages/ProductsList';
 import { Carrito } from './pages/Carrito';
 import { TechnicalService } from './pages/TechnicalService';
+import { Login } from './pages/Login';
+import { Register } from './pages/Register';
 
 function App() {
   return (
@@ -32,7 +34,8 @@ function App() {
           <Route path='products-list' element={ <ProductsList/> } />
           <Route path='carrito' element={ <Carrito /> } />
           <Route path='technicalservice' element={ <TechnicalService /> } />
-          
+          <Route path='login' element={ <Login /> } />
+          <Route path='register' element={ <Register /> } />
           
         </Routes>
         

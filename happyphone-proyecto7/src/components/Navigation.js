@@ -24,7 +24,7 @@ export const Navigation = () => {
         {/* <SearchBar /> */}
 
         <nav className='nav-space'>
-          <Link to='#' className='a-nav'>
+          <Link to='./Login' className='a-nav'>
             Inicia sesión
           </Link>
           <Link to='./ContactForm' className='a-nav'>

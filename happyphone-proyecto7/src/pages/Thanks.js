@@ -1,13 +1,13 @@
 import React from 'react';
 import '../components/thanks.css'
 import { Link } from 'react-router-dom';
-
+import checkImage from '../assets/check.png';
 
 export const Thanks = () => {
   return (
     <main className="thanks">
       <figure>
-        <img className="check" src="../assets/check.png" alt="Imagen con icono check" />
+        <img className="check" src={checkImage} alt="Imagen con icono check" />
       </figure>
 
       <article className="thanks-text">
