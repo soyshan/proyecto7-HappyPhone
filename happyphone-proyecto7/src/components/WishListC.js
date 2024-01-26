@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/cart.css';
+import { Link } from 'react-router-dom';
 
 export function WishListC() {
   const [favorito, setFavorito] = useState([]);
@@ -55,7 +56,7 @@ export function WishListC() {
           <button className="clear-cart" onClick={limpiarFavoritos}>
             Limpiar favoritos
           </button>
-          <button className="continue-shopping">Volver a Inicio</button>
+          <Link to="/" className="continue-shopping">Volver a Inicio</Link>
         </div>
       </aside>
     </main>
