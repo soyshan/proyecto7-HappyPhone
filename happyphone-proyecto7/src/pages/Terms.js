@@ -1,6 +1,6 @@
 // Terms.js
 import React from 'react';
-import '../components/terms.css'
+import '../css/terms.css'
 
 
 export const Terms = () => {

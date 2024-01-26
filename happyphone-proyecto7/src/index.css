@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "poppB";
+  src: url("./fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppR";
+  src: url("./fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppM";
+  src: url("./fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,11 +25,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
 
 .App{
 background-color: #f7f4e8;
@@ -203,7 +222,7 @@ main {
   }
   .image-json:hover{
 
-      height: 15rem;
+      height: 18rem;
       transition: all .9s;
     } 
 

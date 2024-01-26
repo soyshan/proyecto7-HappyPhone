@@ -15,7 +15,6 @@ import { Carrito } from './pages/Carrito';
 import { TechnicalService } from './pages/TechnicalService';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
-import { CarritoList } from './pages/CarritoList';
 
 function App() {
   return (

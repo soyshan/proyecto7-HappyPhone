@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import hamburguer from '../assets/hamburguer.png';
+import logo from '../assets/logo.png';
+import hamburguer from '../assets/hamburguer.png';
 import shoppingcart from '../assets/shoppingcart.png';
 // import SearchBar from './SearchBar';
 
@@ -19,6 +21,13 @@ export const Navigation = ({ cartAmount }) => {
   };
 
   return (
+    <header className='container-nav'>
+      <Link to='/' className='logo'>
+        <img
+          src={logo}
+          alt='Logo Happy Phone'
+        />
+      </Link>
     <header className='container-nav'>
       <Link to='/' className='logo'>
         <img
@@ -53,6 +62,14 @@ export const Navigation = ({ cartAmount }) => {
           <img className='logo-shoppingcart' src={shoppingcart} alt="Carro" />
           <div id="cartAmount" className="cartAmount">{cartAmount}</div>
         </Link>
+        </li>
+        
+       
+        
+        
+        </ul>
+      </nav>
+    </header>
         </li>
         
        

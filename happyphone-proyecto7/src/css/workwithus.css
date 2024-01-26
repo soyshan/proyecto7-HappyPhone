@@ -1,16 +1,5 @@
-@font-face {
-  font-family: "poppB";
-  src: url("../fonts/poppins/Poppins-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "poppR";
-  src: url("../fonts/poppins/Poppins-Regular.ttf") format("truetype");
-}
 
-@font-face {
-  font-family: "poppM";
-  src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
-}
+
 
 
 
@@ -115,4 +104,4 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} 
