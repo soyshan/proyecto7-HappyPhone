@@ -36,6 +36,14 @@ export default function MovilUnico() {
     localStorage.setItem('carrito', JSON.stringify(carritoActual));
     // Aquí puedes añadir alguna notificación o redirección si lo deseas
   };
+
+  const añadirAFavoritos = () => {
+    const productoParaFavoritos = { ...movil, cantidad };
+    let favoritoActual = JSON.parse(localStorage.getItem('favorito')) || [];
+    favoritoActual.push(productoParaFavoritos);
+    localStorage.setItem('favorito', JSON.stringify(favoritoActual));
+    // Aquí puedes añadir alguna notificación o redirección si lo deseas
+  };
   
 
   return (
@@ -64,6 +72,7 @@ export default function MovilUnico() {
       <div className="btn-position">
         <button className="add-to-cart" data-product-name="HappyZ Flip" onClick={añadirAlCarrito}>Comprar ya</button>
         <br />
+        <button className="add-to-cart" data-product-name="HappyZ Flip" onClick={añadirAFavoritos}>Me gusta</button>
         <Link to="/" className="back-to-catalog">Volver al catálogo</Link>
       </div>
     </div>

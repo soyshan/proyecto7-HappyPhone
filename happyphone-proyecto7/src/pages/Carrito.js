@@ -13,6 +13,8 @@ export const Carrito = () => {
       calcularTotal(carritoGuardado);
     }, []);
   
+
+
     const calcularTotal = (carrito) => {
       // Calcular el total del carrito
       const totalCalculado = carrito.reduce((sum, item) => sum + item.precio * item.cantidad, 0);
