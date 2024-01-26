@@ -1,42 +1,62 @@
-import React from "react";
-import { Product } from "./Product";
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import '../css/cart.css';
 
 export function WishListC() {
+  const [favorito, setFavorito] = useState([]);
 
-      const [favorites, setFavorites] = useState([]);
-    
-      const handleAddToFavorites = (product) => {
-        setFavorites((prevFavorites) => [...prevFavorites, product]);
-      };
-    
-      return (
-        <div>
-<div className="container-movil-product">
-       
-          <h2>Productos favoritos</h2>
-          <div className="description">
-          {favorites.map((product) => (
-            <div key={product.id}>
-              <p>{product.name}</p>
-              <img src={product.ruta_imagen} alt={product.nombre} />
-                <h2 className="h2ContainerMovilUnico">{product.nombre}</h2>
-                <p>{product.descripcion}</p>
-                <p>{product.color}</p>
-                <p>{product.precio}€</p>
-            </div>
+  useEffect(() => {
+    // Cargar la lista de deseos desde localStorage al montar el componente
+    const favoritoGuardado = JSON.parse(localStorage.getItem('favorites')) || [];
+    setFavorito(favoritoGuardado);
+  }, []);
+
+  console.log('Estado de favorito:', favorito);
+
+  const limpiarFavoritos = () => {
+    // Limpiar la lista de deseos en localStorage y en el estado local
+    localStorage.removeItem('favorites'); // Utilizar la clave correcta
+    setFavorito([]);
+    alert('Favoritos vaciados.');
+  };
+  
+  const eliminarFavorito = (index) => {
+    // Eliminar un producto de la lista de deseos
+    const nuevaLista = [...favorito];
+    nuevaLista.splice(index, 1);
+    localStorage.setItem('favorites', JSON.stringify(nuevaLista));
+    setFavorito(nuevaLista);
+  };
+
+  return (
+    <main>
+      <aside className="cart">
+        <h2>Tus favoritos</h2>
+        <ul className="cart-items">
+          {favorito.map((item, index) => (
+            <li key={index}>
+              {item && item.ruta_imagen && (
+                <img
+                  src={`${process.env.PUBLIC_URL}/imgJson/${item.ruta_imagen}`}
+                  alt={`${item.nombre} photo`}
+                  className="product-image"
+                />
+              )}
+              {item && (
+                <div className="description">
+                  <h2>{item.nombre}</h2>
+                  <p>{item.precio}€</p>
+                  <button onClick={() => eliminarFavorito(index)}>Eliminar</button>
+                </div>
+              )}
+            </li>
           ))}
-          <Product id={1} name="Producto 1" onAddToFavorites={handleAddToFavorites} />
-          <Product id={2} name="Producto 2" onAddToFavorites={handleAddToFavorites} />
-       </div>
-       </div>
-                    
-            <div className="btn-position">
-                <button className="add-to-cart" data-product-name="HappyZ Flip">Comprar ya</button>
-                <button className="add-to-cart" data-product-name="HappyZ Flip">Quitar de favoritos</button>
-                <Link to="/" className="back-to-catalog">Volver al catálogo</Link>
-            </div>
-            </div>
-);
-
-}
+        </ul>
+        <div className="total">
+          <button className="clear-cart" onClick={limpiarFavoritos}>
+            Limpiar favoritos
+          </button>
+          <button className="continue-shopping">Volver a Inicio</button>
+        </div>
+      </aside>
+    </main>
+)};

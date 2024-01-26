@@ -190,6 +190,8 @@ export function ContactForm() {
         </form>
        
        
+       
+       
         <div className="form-group">
           <a href="https://web.whatsapp.com/">
             <img className="rrss-contact" src={logowhatsapp} alt="logo de WhatsApp" />
@@ -200,9 +202,22 @@ export function ContactForm() {
           </a>
           <a href="https://www.facebook.com/">
             <img className="rrss-contact" src={logofacebook} alt="logo de WhatsApp" />
+            <img className="rrss-contact" src={logowhatsapp} alt="logo de WhatsApp" />
           </a>
 
+          <a href="https://www.instagram.com/">
+            <img className="rrss-contact" src={logoinstagram} alt="logo de WhatsApp" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img className="rrss-contact" src={logofacebook} alt="logo de WhatsApp" />
+          </a>
+
+
         </div>
+
+       
+
+       
 
        
 

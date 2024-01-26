@@ -15,8 +15,15 @@
   margin: 0px;
   border-radius: 50%;
   min-width: 22px;
+  display: flex;
+    justify-content: center;
 }
 
+.p-carrito{
+display: flex;
+color: #fff;
+margin: 0;
+}
 
 
 /*estilo carrito*/

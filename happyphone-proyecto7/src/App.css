@@ -12,6 +12,7 @@
 
 header {
   background-color: #0b0b0d;
+  background-color: #0b0b0d;
   width: 100%;
   height: 5rem;
   display: flex;
@@ -45,14 +46,17 @@ header ul {
 a {
   text-decoration: none;
   color: #f7f4e8;
+  color: #f7f4e8;
 }
 
 a:hover {
+  color: #85e6c0;
   color: #85e6c0;
 }
 
 .menu-section:hover {
   cursor: pointer;
+  color: #85e6c0;
   color: #85e6c0;
 }
 
@@ -117,6 +121,7 @@ h4 {
   font-size: 2rem;
   text-align: center;
   color: #6bb39b;
+  color: #6bb39b;
   /* margin-top: -3rem; */
 }
 
@@ -124,6 +129,10 @@ h4 {
   width: 25%;
   height: 5rem;
 
+  background-color: #6bb39b;
+  border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   background-color: #6bb39b;
   border: #6bb39b;
   background-color: #6bb39b;
@@ -142,11 +151,16 @@ h4 {
   cursor: pointer;
   background-color: #85e6c0;
   background-color: #85e6c0;
+  background-color: #85e6c0;
+  background-color: #85e6c0;
 }
 
 
 
+
+
 article.product {
+
 
   padding-bottom: 1rem;
 }
@@ -167,6 +181,10 @@ article.product:hover {
   border: #6bb39b;
   background-color: #6bb39b;
   border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 5px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -178,6 +196,8 @@ article.product:hover {
 
 .info-product button:hover {
   cursor: pointer;
+  background-color: #85e6c0;
+  
   background-color: #85e6c0;
   
 }
@@ -227,12 +247,15 @@ article.product figure {
 
 .thanks-text a {
   color: #6bb39b;
+  color: #6bb39b;
   text-decoration: none;
   font-weight: bold;
   transform: scale(2.8);
 }
 
 .thanks-text a:hover {
+  color: #85e6c0;
+  color: #85e6c0;
   color: #85e6c0;
   color: #85e6c0;
 }
@@ -243,6 +266,7 @@ h2 {
 }
 
 h2:hover {
+  color: #6bb39b;
   color: #6bb39b;
 }
 h3 {

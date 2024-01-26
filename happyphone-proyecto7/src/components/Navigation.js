@@ -3,7 +3,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import hamburguer from '../assets/hamburguer.png';
 import shoppingcart from '../assets/shoppingcart.png';
-// import SearchBar from './SearchBar';
+import {ContadorCart} from '../components/ContadorCart'
 
 export const Navigation = () => {
   const navigate = useNavigate();
@@ -13,10 +13,7 @@ export const Navigation = () => {
     setIsNavOpen(!isNavOpen);
   };
 
-  const redirectToOtraPagina = () => {
-    // Lógica para redirigir a otra página al hacer clic en el botón con la imagen del carro
-  };
-
+ 
   return (
     <header className='container-nav'>
       <Link to='/' className='logo'>
@@ -48,8 +45,14 @@ export const Navigation = () => {
         </Link>
         </li>
         <li>
-          <Link to='carrito' onClick={redirectToOtraPagina}>
+        <Link to='wishlist' className='a-nav'>
+          Favoritos
+        </Link>
+        </li>
+        <li>
+          <Link to='carrito'>
           <img className='logo-shoppingcart' src={shoppingcart} alt="Carro" />
+          <div id="cartAmount" className="cart-amount">{<ContadorCart />}</div>
         </Link>
         </li>
         
