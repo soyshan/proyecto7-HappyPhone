@@ -1,0 +1,64 @@
+{
+  "user": [
+    {
+      "id": "ramesh",
+      "name": "Ramesh Nadarajan",
+      "password": "12345678",
+      "email": "vidhyasachin19@gmail.com",
+      "phone": "662429966",
+      "country": "india",
+      "address": "Calle Gandhi 17 04 D, 28017 Madrid",
+      "gender": "female"
+    },
+    {
+      "id": "alex",
+      "name": "Alexendra zabrano",
+      "password": "12345678",
+      "email": "alex1@gmail.com",
+      "phone": "662429966",
+      "country": "india",
+      "address": "Calle Gandhi 17 04 D, 28017 Madrid",
+      "gender": "female"
+    },
+    {
+      "id": "shan1",
+      "name": "shan soy",
+      "password": "12345678",
+      "email": "shan@gmail.com",
+      "phone": "12345678",
+      "country": "india",
+      "address": "madrid",
+      "gender": "female"
+    },
+    {
+      "id": "NATY",
+      "name": "NATALIA",
+      "password": "12345678",
+      "email": "naty@gmail.com",
+      "phone": "123456789",
+      "country": "india",
+      "address": "madrid",
+      "gender": "female"
+    },
+    {
+      "id": "simon",
+      "name": "simon suresh",
+      "password": "12345678",
+      "email": "simon@gmail.com",
+      "phone": "123456789",
+      "country": "india",
+      "address": "madrid",
+      "gender": "male"
+    },
+    {
+      "id": "luis",
+      "name": "Luis Angel Alvarez",
+      "password": "12345678",
+      "email": "angel@gmail.com",
+      "phone": "",
+      "country": "india",
+      "address": "Madrid",
+      "gender": "male"
+    }
+  ]
+}

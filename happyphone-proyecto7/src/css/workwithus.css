@@ -12,32 +12,31 @@
   src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+
+.h2-work-with-us {
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  padding-top: 40px;
 }
 
-html,
-body {
-  height: 100%;
+.p-work-with-us {
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
 }
 
-body {
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  font-family: "poppM";
-}
-
-.sectionWorkWithUs {
+.section-work-with-us {
   display: flex;
   justify-content: center;
   align-items: center;
    margin: 35px;
 }
 
-.container {
+
+.container-work-with-us {
   max-width: 400px;
   background-color: #fff;
   padding: 20px;
@@ -46,9 +45,10 @@ body {
   animation: fadeInUp 1s ease;
 }
 
-.title {
+
+.title-work-with-us {
   text-align: center;
-  color: #2f8f97;
+  color: #6bb39b;
 }
 
 form {
@@ -74,7 +74,7 @@ button {
 }
 
 .file-label {
-  background-color: #2f8f97;
+  background-color: #6bb39b;
   color: #fff;
   padding: 8px;
   border-radius: 4px;
@@ -91,7 +91,7 @@ button {
   background-color: #7f8180;
 }
 
-button {
+.button-work-with-us {
   background-color: #7f8180;
   color: #fff;
   cursor: pointer;
@@ -99,21 +99,12 @@ button {
 }
 
 button:hover {
-  background-color: #2f8f97;
+  background-color: #6bb39b;
 }
 
-.h2WorkWithUs {
-  font-size: 30px;
-  text-align: center;
-  align-items: center;
-  padding-top: 40px;
-}
 
-.pWorkWithUs {
-  font-size: 20px;
-  text-align: center;
-  align-items: center;
-}
+
+
 
 @keyframes fadeInUp {
   from {

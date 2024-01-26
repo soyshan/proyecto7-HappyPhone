@@ -3,6 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import '../components/contact.css';
 import userLogo from '../assets/user.png';
 import logowhatsapp from '../assets/whatsapp.png';
+import logoinstagram from '../assets/instagram.svg';
+import logofacebook from '../assets/facebook.svg';
+
 import emailIcon from '../assets/envelope.png';
 import phone from '../assets/phone.png';
 import { Link } from 'react-router-dom';
@@ -184,17 +187,22 @@ export function ContactForm() {
             </button>
           </div>
         </form>
-        <div className="form-group">
-          <p>
-            o <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer">Conéctate por WhatsApp </a>
-          </p>
-        </div>
+       
         <div className="form-group">
           <a href="https://web.whatsapp.com/">
             <img className="logo-whatsapp" src={logowhatsapp} alt="logo de WhatsApp" />
           </a>
+
+          <a href="https://www.instagram.com/">
+            <img className="logo-whatsapp" src={logoinstagram} alt="logo de WhatsApp" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img className="logo-whatsapp" src={logofacebook} alt="logo de WhatsApp" />
+          </a>
+
         </div>
-      
+
+       
         </>
         )}
       </section>

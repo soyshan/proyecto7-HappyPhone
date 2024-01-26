@@ -1,72 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  
-    font-family: "Playpen Sans", cursive;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  
-  /*SECCION PRINCIPAL*/
-  
-  
-  
-  ul {
-    list-style: none;
-  }
-  
-  .main-offer {
-    /* background-color: rgb(100, 235, 235); */
-    width: 100%;
-  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem;
-  }
-  
-  .main-text {
-    display: grid;
-    justify-items: center;
-  
-    padding-top: 2rem;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  
-  h4 {
-    font-size: 2rem;
-    text-align: center;
-    color: #2f8f97;
-    /* margin-top: -3rem; */
-  }
-  
-  .main-button {
-  
-    height: 5rem;
-  
-    background-color: #2f8f97;
-    border: #2f8f97;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px 0px #000;
-    color: #ffff;
-  
-    font-size: 2rem;
-    font-weight: bold;
-    /* margin-top: -9rem; */
-  }
-  
-  .main-button:hover {
-    cursor: pointer;
-    background-color: #297780;
-  }
-  
-  
-  
+
   /*TERMINOS & CONDICIONES*/
   
   .container_terms {
@@ -99,7 +31,7 @@
     margin-top: 1rem;
   }
   
-  .pTerms {
+  p {
     font-size: 1rem;
     text-align: justify;
     color: #000000;

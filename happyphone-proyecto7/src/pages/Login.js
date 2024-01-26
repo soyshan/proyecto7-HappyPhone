@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export function Login()  {
     const [username, usernameupdate] = useState('');
@@ -34,7 +35,8 @@ sessionStorage.clear();
                     }
                 }
             }).catch((err) => {
-                toast.error('Login Failed due to :' + err.message);
+                // toast.error('Login Failed due to :' + err.message);
+                toast.error('Login Failed! not valid user, veriry username and password. click new user to register!! ');
             });
         }
     }
@@ -82,20 +84,27 @@ sessionStorage.clear();
         let result = true;
         if (username === '' || username === null) {
             result = false;
+            // console.log("no hay nombre")
             toast.warning('Please Enter Username');
         }
         if (password === '' || password === null) {
             result = false;
-            toast.warning('Please Enter Password');
+            // console.log("no hay controseña")
+             toast.warning('Please Enter Password');
         }
+        
         return result;
+        
     }
+   
     return (
-        <div className="row">
-            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '100px' }}>
+        <div className="container">
+          
+            <div className="row">
+            <div className="offset-lg-3 col-lg-6" style={{ marginTop: '50px' }}>
                 <form onSubmit={ProceedLogin} className="container">
                     <div className="card">
-                        <div className="card-header">
+                        <div className="card-header" style={{ textAlign: 'center' }}>
                             <h2>User Login</h2>
                         </div>
                         <div className="card-body">
@@ -109,13 +118,14 @@ sessionStorage.clear();
                             </div>
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Login</button>  
-                            <Link className="btn btn-success" to={'/register'}>New User</Link>
+                            <button type="submit" className="btn btn-primary col-lg-5">Login</button>  
+                            <Link className="btn btn-success col-lg-5" to={'/register'}>New User</Link>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+        </div>
+        
     );
 }
-

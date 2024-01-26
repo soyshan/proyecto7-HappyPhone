@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 export function Register()  {
 
@@ -14,6 +16,15 @@ export function Register()  {
     const [gender, genderchange] = useState("female");
 
     const navigate = useNavigate();
+
+    const [isVerified, setIsVerified] = useState(false);
+
+
+    const handleRecaptchaChange = (value) => {
+        // Handle reCAPTCHA value change, e.g., store it in state
+        console.log("reCAPTCHA value:", value);
+        setIsVerified(true);
+      };
 
     //validation for mandatory fields
     const IsValidate = () => {
@@ -72,7 +83,7 @@ export function Register()  {
             <div className="offset-lg-3 col-lg-6">
                 <form className="container" onSubmit={handlesubmit}>
                     <div className="card">
-                        <div className="card-header">
+                        <div className="card-header" style={{ textAlign: 'center' }}>
                             <h1>User Registeration</h1>
                         </div>
                         <div className="card-body">
@@ -124,10 +135,10 @@ export function Register()  {
                                         <textarea value={address} onChange={e => addresschange(e.target.value)} className="form-control"></textarea>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-4" style={{ margin: '5px' }}>
                                     <div className="form-group">
                                         <label>Gender</label>
-                                        <br></br>
+                                        
                                         <input type="radio" checked={gender === 'male'} onChange={e => genderchange(e.target.value)} name="gender" value="male" className="app-check"></input>
                                         <label>Male</label>
                                         <input type="radio" checked={gender === 'female'} onChange={e => genderchange(e.target.value)} name="gender" value="female" className="app-check"></input>
@@ -139,14 +150,20 @@ export function Register()  {
 
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-primary">Register</button> |
-                            <Link to={'/login'} className="btn btn-danger">Close</Link>
+                            <ReCAPTCHA 
+                            sitekey="6Lc-UlQpAAAAAP4ARjFNQIWVOitb_1rDnTBUsbbG"
+                            onChange={handleRecaptchaChange}
+                            />
+                            {/* <button disabled={!this.state.isverified} type="submit" className="btn btn-primary col-lg-5">Register</button>  */}
+                            <button disabled={!isVerified} type="submit" className="btn btn-primary col-lg-5">Register</button>
+
+                            <Link to={'/login'} className="btn btn-danger col-lg-5">Close</Link>
                         </div>
                     </div>
                 </form>
             </div>
 
-
+            
         </div>
     );
 }

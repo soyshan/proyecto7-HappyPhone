@@ -1,20 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
-  font-family: "Playpen Sans", cursive;
-  font-family: "Poppins", sans-serif;
-}
 
 /*HEADER*/
 
 /*carrito de compra cantidad*/
-.logo-shoppingcart {
-  position: absolute;
-  margin-top: 35px;
-  margin-left: -73px;
-}
 
 .cart-amount {
   position: absolute;
@@ -29,7 +17,7 @@
   min-width: 22px;
 }
 
-/*FOOTER*/
+
 
 /*estilo carrito*/
 .cart {
