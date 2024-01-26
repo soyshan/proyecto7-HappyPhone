@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../components/contact.css';
+import '../css/contact.css'
 import userLogo from '../assets/user.png';
 import logowhatsapp from '../assets/whatsapp.png';
 import logoinstagram from '../assets/instagram.svg';
