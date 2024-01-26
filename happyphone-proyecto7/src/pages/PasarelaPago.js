@@ -65,7 +65,7 @@ export function PasarelaPago() {
 
   
     <div className="containerPasarelaPago">
-   <div className='divPasarelaPago'>
+     <div className='divPasarelaPago'>
       <div className="payment-container">
         {isSubmitted ? (
           <div>

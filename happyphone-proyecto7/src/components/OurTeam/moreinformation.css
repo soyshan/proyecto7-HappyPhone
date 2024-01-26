@@ -11,63 +11,94 @@
     font-family: "poppM";
     src: url("../../fonts/poppins/Poppins-Medium.ttf") format("truetype");
   }
+.h1-our-team {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "poppB";
+}
 
+.equipo-img-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  gap: 2rem; /* Ajusta según sea necesario */
+  justify-content: center;
+  width: 80%; /* Ajusta según sea necesario */
+  margin: 3rem auto;
+}
 
-  .galeria {
-    text-align: center; /* Alinea el contenido al centro */
-  }
+.equipo-img-item {
+  position: relative;
+  text-align: center;
   
-  .foto {
-    flex: 0 0 calc(50% - 20px); 
-    margin: 10px;
-    cursor: pointer;
-    perspective: 1000px;
-    position: relative;
-    
+}
+
+.equipo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.equipo-img-item:hover .equipo-img {
+  transform: scale(1.1); /* Ajusta el valor según sea necesario */
+  transition: transform 0.3s ease;
+}
+
+.descripcion-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%; /* Ajusta según sea necesario */
+  max-width: 400px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.equipo-img-item:hover .descripcion-overlay {
+  opacity: 1;
+}
+
+.descripcion-overlay.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.descripcion-overlay.hide {
+  opacity: 0;
+}
+
+.descripcion {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: transform 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(10deg);
+  transform-origin: 0 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .equipo-img-container {
+    grid-template-columns: 1fr;
   }
-  
-  .equipo-img {
-    flex: 0 50 calc(50.333% - 50px);
-    /* width:1347px; */
-    height: auto;
-    transition: transform 0.5s;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    margin: 2px;
-    margin-top: 50px;
+
+  .descripcion-overlay {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
   }
-  
+
   .descripcion {
-    position: absolute;
-    top: 0;
-    left: 140px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    transform: rotateY(90deg);
-    transform-origin: 0 0;
-    transition: transform 0.5s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    font-size: 14px;
-    z-index: 1;
-    width: 400px;
-  
+    transform: translate(-50%, 0) rotateY(10deg);
   }
-  
-  .foto:hover .descripcion {
-    transform: rotateY(0deg);
-  }
-  
-  @media screen and (min-width: 768px) {
-    .foto {
-        flex: 0 0 calc(33.333% - 20px);
-    }
-   
-  .equipo-img {
-    left: 0px;
-  }
-  /* .descripcion {
-    left: 205px;  
-  } */
 }

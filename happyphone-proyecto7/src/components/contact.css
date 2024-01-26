@@ -3,7 +3,7 @@
 
   
   /*CONTACTO*/
-  .contacto {
+  .contacto{
     display: flex;
     justify-content: center;
     padding: 43px -7px 10px 97px;
@@ -33,9 +33,9 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 15px;
+    margin: 5%;
     width: 425px;
-    height: 65hv;
+    height: 39rem;
   }
   
   
@@ -72,8 +72,13 @@
     height: 20px;
   }
   
-  .logo-whatsapp {
+  .rrss-contact {
     width: 40px;
+    margin: 1%;
+  }
+  .rrss-contact:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
   }
   
   /* Estilos para los campos del formulario */
@@ -120,10 +125,10 @@
   
   /* Estilos para el botón de registro */
   .botons {
-    background-color: #2f8f97;
-    border: #2f8f97;
+    background-color: #6bb39b;
+    border: #6bb39b;
     width: 5rem;
-    height: 2rem;
+    height: 2.5rem;
     border-radius: 13px;
     box-shadow: 0 3px 6px 0px #000;
     color: #ffff;
@@ -132,7 +137,7 @@
   /* Estilos para el enlace de términos y condiciones */
   .form-group a {
     text-decoration: none;
-    color: #2f8f97;
+    color: #6bb39b;
   }
   
   /* Estilos para el checkbox de términos y condiciones */
@@ -143,7 +148,7 @@
   /* Estilos en hover para el botón */
   .botons:hover {
     cursor: pointer;
-    background-color: #297780;
+    background-color: #2c7575;
     transform: scale(1.1);
     transition: all 0.5s;
   }

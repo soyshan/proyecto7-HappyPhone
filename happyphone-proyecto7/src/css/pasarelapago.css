@@ -50,8 +50,7 @@
   }
   
   h2 {
-    color: #2f8f97;
-    text-decoration: underline;
+    color: #0b0b0d;
   }
   form {
     display: flex;
@@ -71,7 +70,7 @@
   }
   
   button {
-    background-color: #2f8f97;
+    background-color: #6bb39b;
     color: #fff;
     padding: 10px;
     border: none;
@@ -80,7 +79,7 @@
   }
   
   button:hover {
-    background-color: #565b56;
+    background-color: #0b0b0d;
   }
   
   .card-icons {

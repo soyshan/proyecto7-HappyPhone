@@ -12,6 +12,9 @@ import { Thanks } from './pages/Thanks';
 import { MoreInformationPage } from './pages/MoreInformationPage';
 import { ProductsList } from './pages/ProductsList';
 import { Carrito } from './pages/Carrito';
+import { TechnicalService } from './pages/TechnicalService';
+import { Login } from './pages/Login';
+import { Register } from './pages/Register';
 import { CarritoList } from './pages/CarritoList';
 
 function App() {
@@ -31,8 +34,12 @@ function App() {
           <Route path='more-information' element={<MoreInformationPage/>} />
           <Route path='products-list' element={ <ProductsList/> } />
           <Route path='carrito' element={ <Carrito /> } />
+          <Route path='technicalservice' element={ <TechnicalService /> } />
+          <Route path='login' element={ <Login /> } />
+          <Route path='register' element={ <Register /> } />
           
         </Routes>
+        
         
         <Footer />
       </BrowserRouter>
@@ -41,6 +48,3 @@ function App() {
 }
 
 export default App;
-
-
-

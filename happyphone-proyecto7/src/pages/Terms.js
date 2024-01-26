@@ -9,7 +9,7 @@ export const Terms = () => {
 
     <div className="terms">
         <article className="terms-text">
-          <h2 className="h2-terms" >Términos y Condiciones 2023</h2>
+          <h2 className="h2-terms" >Términos y Condiciones 2024</h2>
           <div className="container_terms">
             <div className="column">
               <h4>1. Introducción</h4>

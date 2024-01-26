@@ -2,20 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../components/contact.css';
 import userLogo from '../assets/user.png';
-import logowhatsapp from '../assets/whatsapp.png';
-import logoinstagram from '../assets/instagram.svg';
-import logofacebook from '../assets/facebook.svg';
-
-
 import emailIcon from '../assets/envelope.png';
-import phone from '../assets/phone.png';
 import { Link } from 'react-router-dom';
 import { Thanks } from './Thanks';
 
-export function ContactForm() {
+export function TechnicalService() {
   const [formData, setFormData] = useState({
     Nombres: '',
-    teléfono: '',
     correo: '',
     mensaje: '',
     terminos: false,
@@ -44,11 +37,7 @@ export function ContactForm() {
       newErrors.Nombres = 'El nombre debe tener entre 8 y 20 caracteres';
     }
 
-    if (!/^\d{9,12}$/.test(formData.teléfono)) {
-      newErrors.teléfono = 'Ingresa un número de teléfono válido (entre 9 y 12 dígitos)';
-    }
-
-    if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(formData.correo)) {
+       if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(formData.correo)) {
       newErrors.correo = 'Ingresa un correo electrónico válido';
     }
 
@@ -88,7 +77,7 @@ export function ContactForm() {
 
 
         <>
-        <h4>NUESTRO EQUIPO SE PONDRÁ EN CONTACTO CONTIGO</h4>
+        <h4>SERVICIO TECNICO<br />Incidencias</h4>
         <form id="contactForm" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="Nombres">
@@ -111,28 +100,6 @@ export function ContactForm() {
             </label>
           </div>
 
-          <div className="form-group">
-            <label htmlFor="teléfono">
-              <div className="input-container">
-                <img className="logos-peques" src={phone} alt="logo teléfono en verde" />
-                <input
-                  className="control"
-                  type="tel"
-                  name="teléfono"
-                  id="teléfono"
-                  placeholder="Teléfono"
-                  minLength="8"
-                  maxLength="12"
-                  pattern="[0-9]{9,}"
-                  title="Ingresa solo números (mínimo 9 cifras)"
-                  value={formData.teléfono}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              {errors.teléfono && <p className="error-message">{errors.teléfono}</p>}
-            </label>
-          </div>
 
           <div className="form-group">
             <label htmlFor="correo">
@@ -190,41 +157,13 @@ export function ContactForm() {
         </form>
        
        
-        <div className="form-group">
-          <a href="https://web.whatsapp.com/">
-            <img className="rrss-contact" src={logowhatsapp} alt="logo de WhatsApp" />
-          </a>
-
-          <a href="https://www.instagram.com/">
-            <img className="rrss-contact" src={logoinstagram} alt="logo de WhatsApp" />
-          </a>
-          <a href="https://www.facebook.com/">
-            <img className="rrss-contact" src={logofacebook} alt="logo de WhatsApp" />
-          </a>
-
-        </div>
-
-       
-
-       
+      
         </>
         )}
       </section>
 
     
-      <figure className="mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.5506301469377!2d-3.7021057241135527!3d40.39665107144289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226346cdb5ebb%3A0x73a304caeab8973a!2sC.%20Fernando%20Poo%2C%2025%2C%2028045%20Madrid!5e0!3m2!1ses!2ses!4v1699288986331!5m2!1ses!2ses"
-          width="400"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          alt="mapa de google map señalando la ubicación"
-          title="googlemap"
-        ></iframe>
-      </figure>
+
     </main>
   );
 }

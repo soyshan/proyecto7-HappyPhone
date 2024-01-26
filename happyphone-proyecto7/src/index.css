@@ -17,9 +17,14 @@ code {
   box-sizing: border-box;
 }
 
+.App{
+background-color: #f7f4e8;
+}
+
 html,
 body {
   height: 100%;
+  
 }
 
 body {
@@ -42,21 +47,34 @@ main {
     background-color: #0b0b0d;
     align-content: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
     flex-direction: row;
     height: 6rem;
     height: 6rem;
 }
+.menu-toggle {
+  display: none;
 
+}
+
+/* Estilos para el menú desplegable */
+.nav-space {
+  display: block;
+}
+.nav-space ul {
+  display: flex; 
+  list-style: none;
+  /* Muestra la lista en horizontal */
+}
+
+.nav-space li {
+  margin-right: 20px; /* Espacio entre cada enlace */
+}
 .logo {
   height: 5rem;
   display: flex;
   padding-left: 3rem;
 }
-.lupa{
-	width: 30px;
-	height: 30px;
-}
+
 .logo-shoppingcart {
 	width: 40px;
 	margin-right: 15px;
@@ -64,9 +82,9 @@ main {
 .a-nav {
 	font-weight: bold;
     margin: 0 25px;
-    color: #000;
+    color: #f7f4e8;
     text-decoration: none;
-    text-shadow: 2px 2px 4px #FFFFFF;
+
 }
 .logo-shoppingcart {
   width: 40px;
@@ -137,8 +155,8 @@ main {
 
 .main-button-home {
   height: 5rem;
-  background-color: #2f8f97;
-  border: #2f8f97;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -190,10 +208,10 @@ main {
     } 
 
     .link-to-return{
-  display: inline-block;
+    display: inline-block;
     padding: 8px 20px;
     background-color: #6bb39b;
-    color: #000000;
+    color: #f7f4e8;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -201,7 +219,7 @@ main {
   }
 
   .btn-pages{
-    background-color: #2f8f97;
+    background-color: #6bb39b;
       color: #fff;
       cursor: pointer;
       transition: background-color 0.3s ease;
@@ -220,6 +238,9 @@ main {
 
 
 @media screen and (max-width: 1100px) {
+  
+  
+
   .main-image{
     height: 18rem;   
   }
@@ -243,6 +264,46 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-space {
+    display: none; /* Ocultar el menú normal en pantallas pequeñas */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
+  }
+
+  .menu-toggle .hamburger {
+    /* Estilos para el ícono de hamburguesa, por ejemplo: */
+    width: 30px;
+    height: 3px;
+    
+    margin: 5px 0;
+    transition: 0.4s;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .nav-space.open {
+    display: block; /* Mostrar el menú desplegable al hacer clic en el ícono de hamburguesa */
+    z-index: 800;
+    margin-top: 11rem;
+  }
+
+  .nav-space ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #0b0b0d;
+    margin-top: 5rem;
+    
+    
+  }
+
+  .nav-space li {
+    margin-bottom: 10px; /* Espacio entre cada enlace */
+  }
+
   .main-image{
     height: 10rem;   
   }

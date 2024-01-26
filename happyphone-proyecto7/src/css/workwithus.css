@@ -12,6 +12,9 @@
   src: url("../fonts/poppins/Poppins-Medium.ttf") format("truetype");
 }
 
+
+
+
 .h2-work-with-us {
   font-size: 30px;
   text-align: center;
@@ -45,7 +48,7 @@
 
 .title-work-with-us {
   text-align: center;
-  color: #2f8f97;
+  color: #6bb39b;
 }
 
 form {
@@ -71,7 +74,7 @@ button {
 }
 
 .file-label {
-  background-color: #2f8f97;
+  background-color: #6bb39b;
   color: #fff;
   padding: 8px;
   border-radius: 4px;
@@ -96,7 +99,7 @@ button {
 }
 
 button:hover {
-  background-color: #2f8f97;
+  background-color: #6bb39b;
 }
 
 

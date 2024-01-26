@@ -6,11 +6,11 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 .check {
-  max-width: 100%;
+  max-width: 10rem;
   height: auto;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .thanks-text .contact-link {
-  color: #2f8f97;
+  color: #6bb39b;
   text-decoration: none;
   font-weight: bold;
   transform: scale(2.8);

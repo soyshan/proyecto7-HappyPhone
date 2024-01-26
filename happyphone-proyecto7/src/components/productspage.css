@@ -1,14 +1,4 @@
 
-
-  .filter-button {
-    display: flex;
-    align-items: center;
-    margin-left: 20px; /* Ajusta el margen a tu preferencia */
-    color: #2F8F97;
-  }
-  
-
-
 .productos-lista {
     text-align: center;
     padding: 20px;
@@ -66,7 +56,7 @@
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #2F8F97;
+    color: #6bb39b;
      /* Ajusta el margen a tu preferencia */
   }
   

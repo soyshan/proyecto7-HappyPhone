@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: 'Playpen Sans', cursive;
   font-family: 'Poppins', sans-serif;
 }
@@ -49,12 +48,12 @@ a {
 }
 
 a:hover {
-  color: #2F8F97;
+  color: #85e6c0;
 }
 
 .menu-section:hover {
   cursor: pointer;
-  color: #daf3ea;
+  color: #85e6c0;
 }
 
 .logo-web {
@@ -117,7 +116,7 @@ h1 {
 h4 {
   font-size: 2rem;
   text-align: center;
-  color: #2F8F97;
+  color: #6bb39b;
   /* margin-top: -3rem; */
 }
 
@@ -125,8 +124,10 @@ h4 {
   width: 25%;
   height: 5rem;
 
-  background-color: #2F8F97;
-  border: #2F8F97;
+  background-color: #6bb39b;
+  border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -139,25 +140,14 @@ h4 {
 
 .main-button:hover {
   cursor: pointer;
-  background-color: #daf3ea;
+  background-color: #85e6c0;
+  background-color: #85e6c0;
 }
 
-/*CAROUSEL*/
 
-.carousel-products {
-
-  padding: 3rem;
-  padding-bottom: 5rem;
-  text-align: center;
-  gap: 3.5rem;
-
-  display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); */
-  grid-auto-flow: column;
-}
 
 article.product {
-  /* border: 0.5px solid rgb(236, 233, 233); */
+
   padding-bottom: 1rem;
 }
 
@@ -173,8 +163,10 @@ article.product:hover {
 }
 
 .info-product button {
-  background-color: #2F8F97;
-  border: #2F8F97;
+  background-color: #6bb39b;
+  border: #6bb39b;
+  background-color: #6bb39b;
+  border: #6bb39b;
   border-radius: 5px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -186,8 +178,8 @@ article.product:hover {
 
 .info-product button:hover {
   cursor: pointer;
-  background-color: #daf3ea;
-
+  background-color: #85e6c0;
+  
 }
 
 article.product figure {
@@ -355,8 +347,8 @@ h3{
 
 
 .botons {
-  background-color: #2F8F97;
-  border: #2F8F97;
+  background-color: #6bb39b;
+  border: #6bb39b;
   width: 15rem;
   height: 3rem;
   border-radius: 13px;
@@ -365,7 +357,8 @@ h3{
 }
 .botons:hover {
   cursor: pointer;
-  background-color: #daf3ea;
+  background-color: #85e6c0;
+  background-color: #85e6c0;
   
 }
 
@@ -408,14 +401,15 @@ h3{
 }
 
 .thanks-text a {
-  color: #2f8f97;
+  color: #6bb39b;
   text-decoration: none;
   font-weight: bold;
   transform: scale(2.8);
 }
 
 .thanks-text a:hover {
-  color: #daf3ea;
+  color: #85e6c0;
+  color: #85e6c0;
 }
 
 h2 {
@@ -424,7 +418,7 @@ h2 {
 }
 
 h2:hover {
-  color: #2f8f97;
+  color: #6bb39b;
 }
 h3 {
   font-size: 1.7rem;
@@ -439,50 +433,4 @@ p {
   text-align: center;
   color: #000000;
   margin-top: 1rem;
-}
-
-
-
-
-/*FOOTER*/
-
-
-.about-footer {
-  margin: 1rem;
-  display: grid;
-  justify-content: start;
-}
-
-.about-footer li {
-  display: grid;
-  justify-content: flex-start;
-}
-
-.rrss-footer {
-  display: flex;
-  align-items: center;
-}
-
-.logo-rrss {
-  width: 60%;
-  margin: 1rem;
-  gap: 0;
-  transition: all 0.3s;
-}
-
-.logo-rrss:hover {
-  transform: scale(1.3);
-}
-
-.info-footer {
-  margin: 1rem;
-
-  display: grid;
-  justify-content: flex-end;
-}
-
-.info-footer p,
-li {
-  display: grid;
-  justify-content: flex-end;
 }
