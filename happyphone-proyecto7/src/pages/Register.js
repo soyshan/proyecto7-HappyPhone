@@ -29,18 +29,18 @@ import { useState } from "react";
         //validation for mandatory fields
         const IsValidate = () => {
             let isproceed = true;
-            let errormessage = 'Please enter the value in ';
+            let errormessage = 'Por favor introduce el valor en ';
             if (id === null || id === '') {
                 isproceed = false;
-                errormessage += ' Username';
+                errormessage += ' Nombre de usuario';
             }
             if (name === null || name === '') {
                 isproceed = false;
-                errormessage += ' Fullname';
+                errormessage += ' Nombre completo';
             }
             if (password === null || password === '') {
                 isproceed = false;
-                errormessage += ' Password';
+                errormessage += ' contraseña';
             }
             if (email === null || email === '') {
                 isproceed = false;
@@ -54,7 +54,7 @@ import { useState } from "react";
     
                 }else{
                     isproceed = false;
-                    toast.warning('Please enter the valid email')
+                    toast.warning('Por favor introduce un email valido')
                 }
             }
             return isproceed;
@@ -79,47 +79,43 @@ import { useState } from "react";
             }
         }
         return (
-            <div>
-                <div className="offset-lg-3 col-lg-6">
-                    <form className="container" onSubmit={handlesubmit}>
-                        <div className="card">
-                            <div className="card-header" style={{ textAlign: 'center' }}>
-                                <h1>Registro</h1>
-                            </div>
+            <section className="container">
+                <div className="width-form-login">
+                    <form className="formulario" onSubmit={handlesubmit}>
+
+                              <h4>Registro</h4>
+                           
                             <div className="card-body">
     
-                                <div className="row">
-                                    <div className="col-lg-6">
+                                
+                                    <div className="lines-form-register">
                                         <div className="form-group">
                                             <label>Nombre de usuario <span className="errmsg">*</span></label>
                                             <input value={id} onChange={e => idchange(e.target.value)} className="form-control"></input>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-6">
+                                    
                                         <div className="form-group">
                                             <label>Contraseña <span className="errmsg">*</span></label>
                                             <input value={password} onChange={e => passwordchange(e.target.value)} type="password" className="form-control"></input>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="lines-form-register">
                                         <div className="form-group">
                                             <label>Nombre completo <span className="errmsg">*</span></label>
                                             <input value={name} onChange={e => namechange(e.target.value)} className="form-control"></input>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-6">
+                                   
                                         <div className="form-group">
                                             <label>Email <span className="errmsg">*</span></label>
                                             <input value={email} onChange={e => emailchange(e.target.value)} className="form-control"></input>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6">
+                                    <div className="lines-form-register">
                                         <div className="form-group">
                                             <label>Teléfono <span className="errmsg"></span></label>
                                             <input value={phone} onChange={e => phonechange(e.target.value)} className="form-control"></input>
                                         </div>
-                                    </div>
-                                    <div className="col-lg-6">
+                                    
                                         <div className="form-group">
                                             <label>País <span className="errmsg">*</span></label>
                                             <select value={country} onChange={e => countrychange(e.target.value)} className="form-control">
@@ -135,36 +131,35 @@ import { useState } from "react";
                                             <textarea value={address} onChange={e => addresschange(e.target.value)} className="form-control"></textarea>
                                         </div>
                                     </div>
-                                    <div className="col-lg-4" style={{ margin: '5px' }}>
+                                    
                                         <div className="form-group">
                                             <label>Sexo</label>
-                                            
+                                            <br/>
                                             <input type="radio" checked={gender === 'male'} onChange={e => genderchange(e.target.value)} name="gender" value="male" className="app-check"></input>
                                             <label>Hombre</label>
                                             <input type="radio" checked={gender === 'female'} onChange={e => genderchange(e.target.value)} name="gender" value="female" className="app-check"></input>
                                             <label>Mujer</label>
                                         </div>
-                                    </div>
-    
-                                </div>
     
                             </div>
-                            <div className="card-footer">
+                            <div className="captcha">
                                 <ReCAPTCHA 
                                 sitekey="6Lc-UlQpAAAAAP4ARjFNQIWVOitb_1rDnTBUsbbG"
                                 onChange={handleRecaptchaChange}
                                 />
-                                {/* <button disabled={!this.state.isverified} type="submit" className="btn btn-primary col-lg-5">Register</button>  */}
+                               <div>
+
+                              
                                 <button disabled={!isVerified} type="submit" className="link-to-return">Register</button>
     
                                 <Link to={'/login'} className="link-to-return">Close</Link>
-                            </div>
-                        </div>
+                                </div>
+                             </div>
                     </form>
                 </div>
     
                 
-            </div>
+            </section>
         );
     }
 

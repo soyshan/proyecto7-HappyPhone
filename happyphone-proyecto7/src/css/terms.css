@@ -20,13 +20,13 @@
     text-align: center;
     padding-top: 30px;
     text-decoration: none;
-    color:#000
+    color:#0b0b0d;
   }
   
   h4 {
     font-size: 1rem;
     text-align: center;
-    color: #000000;
+    color: #0b0b0d;
     font-weight: bold;
     margin-top: 1rem;
   }
@@ -34,7 +34,7 @@
   p {
     font-size: 1rem;
     text-align: justify;
-    color: #000000;
+    color: #0b0b0d;
     margin-top: 1rem;
     font-weight: lighter;
   }

@@ -51,7 +51,7 @@ export const WorkWithUs = () => {
                 </div>
               ) : (
                   
-                  <form onSubmit={handleSubmit} id="jobApplicationForm" encType="multipart/form-data">
+                  <form className="form-work-with-us" onSubmit={handleSubmit} id="jobApplicationForm" encType="multipart/form-data">
                       <h3 className="title-work-with-us">Ingresa tus datos</h3>
                       <label htmlFor="name">Nombre:</label>
                       <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required/>
@@ -62,7 +62,8 @@ export const WorkWithUs = () => {
 
                           <div className="file-input-container">
                             <label htmlFor="resume" className="file-label">Seleccionar archivo</label>
-                            <input type="file" id="resume" name="resume" accept=".pdf" onChange={handleChange} required />
+                            <br />
+                            <input className="input-work-with-us" type="file" id="resume" name="resume" accept=".pdf" onChange={handleChange} required />
                           </div>
 
                       <button className='button-work-with-us' type="submit" >Enviar solicitud</button>

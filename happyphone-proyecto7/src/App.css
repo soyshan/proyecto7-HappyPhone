@@ -73,8 +73,6 @@ figure.logo-rrss img {
 }
 
 .main-container {
-  /* background-color: red; */
-  /* border: 3px solid black; */
   height: 100vh;
 
   display: grid;
@@ -92,9 +90,7 @@ ul {
 }
 
 .main-offer {
-  /* background-color: rgb(100, 235, 235); */
   width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
@@ -126,8 +122,7 @@ h4 {
 
   background-color: #6bb39b;
   border: #6bb39b;
-  background-color: #6bb39b;
-  border: #6bb39b;
+
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
   color: #ffff;
@@ -141,7 +136,7 @@ h4 {
 .main-button:hover {
   cursor: pointer;
   background-color: #85e6c0;
-  background-color: #85e6c0;
+
 }
 
 
@@ -165,11 +160,10 @@ article.product:hover {
 .info-product button {
   background-color: #6bb39b;
   border: #6bb39b;
-  background-color: #6bb39b;
-  border: #6bb39b;
+
   border-radius: 5px;
   box-shadow: 0 3px 6px 0px #000;
-  color: #ffff;
+  color: #f7f4e8;
 
   font-size: large;
   font-weight: bold;
@@ -245,12 +239,12 @@ h2 {
 }
 
 h2:hover {
-  color: #6bb39b;
+  color: #2f8f97;
 }
 h3 {
   font-size: 1.7rem;
   text-align: center;
-  color: #000000;
+  color: #0b0b0d;
 
   margin-top: 1rem;
 }
@@ -258,6 +252,6 @@ h3 {
 p {
   font-size: 1.2rem;
   text-align: center;
-  color: #000000;
+  color: #0b0b0d;
   margin-top: 1rem;
 }

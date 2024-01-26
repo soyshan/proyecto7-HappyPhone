@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "poppB";
+  src: url("./fonts/poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "poppR";
+  src: url("./fonts/poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "poppM";
+  src: url("./fonts/poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,17 +25,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  font-family: "poppM";
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
+
 
 .App{
 background-color: #f7f4e8;
@@ -27,12 +49,7 @@ body {
   
 }
 
-body {
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  font-family: "poppM";
-}
+
 
 main {
   flex: 1 0 auto;
@@ -94,7 +111,7 @@ main {
 
 .clean {
   text-decoration: none;
-  color: #ffffff00;
+  color: #0b0b0d;
 }
 #frameBuscar {
   width: 170px;
@@ -148,10 +165,15 @@ main {
   border: #6bb39b;
   border-radius: 10px;
   box-shadow: 0 3px 6px 0px #000;
-  color: #ffff;
+  color: #f7f4e8;
   font-size: 2rem;
   font-weight: bold;
 }
+.main-button-home:hover {
+  background-color: #0b0b0d;
+  color: #85e6c0;
+}
+
 
 .section-movil-product{
   display: flex;
@@ -211,7 +233,7 @@ main {
 
   .btn-pages{
     background-color: #6bb39b;
-      color: #fff;
+      color: #f7f4e8;
       cursor: pointer;
       transition: background-color 0.3s ease;
       border: 1px solid #ccc;
@@ -222,11 +244,14 @@ main {
 
 
 .btn-pages:hover {
-  background-color: #2f8e97bf;
+  background-color: #0b0b0d;
+  color: #85e6c0;
 }
 
 /* FIN INICIO*/ 
-
+.section-wish-list{
+  min-height: 50vh;
+}
 
 @media screen and (max-width: 1100px) {
   
@@ -320,23 +345,6 @@ height: 15rem;
 }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  font-family: "poppM";
-}
 
 main {
   flex: 1 0 auto;
@@ -371,9 +379,6 @@ main {
 
 .clean {
   text-decoration: none;
-  color: #ffffff00;
+  color: #0b0b0d;
 }
-
-
-
 

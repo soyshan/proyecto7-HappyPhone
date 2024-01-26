@@ -1,4 +1,7 @@
 
+  
+
+  
   /*CONTACTO*/
   .contacto{
     display: flex;
@@ -7,32 +10,24 @@
     /* margin-bottom: -13rem; */
     /* margin-top: -2rem; */
     height: auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     align-content: space-between;
     flex-direction: row;
   }
-  @media screen and (max-device-width: 560px){
-    .contacto {
-      display: grid;
-      grid-template-rows: auto;
-      padding: 10px;
-      margin: 15px;
-      border-radius: 10px;
-    }
-  }
-  
+ 
   .formulario {
     display: inline-block;
     align-items: center;
-    color: #000;
+    color: #0b0b0d;
     background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 5%;
-    width: 425px;
-    height: 39rem;
+    width: 100%;
+    max-width: 425px;
+    height: auto;
   }
   
   
@@ -48,107 +43,123 @@
     margin-top: 1rem;
   }
   
+
+/* Estilos para el botón de registro */
+.botons {
+  background-color: #6bb39b;
+  border: #6bb39b;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 13px;
+  box-shadow: 0 3px 6px 0px #000;
+  color: #f7f4e8;
+}
+
+/* Estilos para el enlace de términos y condiciones */
+.form-group a {
+  text-decoration: none;
+  color: #6bb39b;
+}
+
+/* Estilos para el checkbox de términos y condiciones */
+.form-group input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Estilos en hover para el botón */
+.botons:hover {
+  cursor: pointer;
+  background-color: #0b0b0d;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  color: #85e6c0;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logos-peques {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-80%);
+  height: 20px;
+}
+
+.rrss-contact {
+  width: 40px;
+  margin: 1%;
+}
+.rrss-contact:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+/* Estilos para los campos del formulario */
+.form-group {
+  margin: 5px;
+  text-align: center;
+}
+
+.control {
+  padding-left: 0px;
+  width: 23rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.control1 {
+  width: 23rem;
+  height: 6rem;
+  padding: 10px;
+  padding-bottom: 70px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  vertical-align: top;
+  text-align: center;
+}
+
+
+
+
+@media screen and (max-device-width: 560px){
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+}
+
   /* Media query para pantallas más pequeñas */
   @media screen and (max-width: 800px) {
+    .formulario {
+      padding: 10px; 
+      margin: 4rem 2rem;
+    }
+    
     h4 {
-      font-size: 20px;
-      /* Ajusta el ancho al 100% en pantallas más pequeñas */
+      font-size: 18px; 
     }
-  }
-  
-  .input-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .logos-peques {
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-80%);
-    height: 20px;
-  }
-  
-  .rrss-contact {
-    width: 40px;
-    margin: 1%;
-  }
-  .rrss-contact:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
-  }
-  
-  /* Estilos para los campos del formulario */
-  .form-group {
-    margin: 5px;
-    text-align: center;
-  }
-  
-  .control {
-    padding-left: 0px;
-    width: 23rem;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 13px;
-    text-align: center;
-  }
-  
+
+  .control,
   .control1 {
-    width: 23rem;
-    height: 6rem;
-    padding: 10px;
-    padding-bottom: 70px;
-    border: 1px solid #ccc;
-    border-radius: 13px;
-    vertical-align: top;
-    text-align: center;
+    width: 100%;
   }
-  
-  /* Media query para pantallas más pequeñas */
-  @media screen and (max-width: 800px) {
-    .control {
-      width: 100%;
-      /* Ajusta el ancho al 100% en pantallas más pequeñas */
-    }
-  }
-  
-  /* Media query para pantallas más pequeñas */
-  @media screen and (max-width: 800px) {
-    .control1 {
-      width: 80%;
-      /* Ajusta el ancho al 100% en pantallas más pequeñas */
-    }
-  }
-  
-  /* Estilos para el botón de registro */
+
   .botons {
-    background-color: #6bb39b;
-    border: #6bb39b;
-    width: 5rem;
-    height: 2.5rem;
-    border-radius: 13px;
-    box-shadow: 0 3px 6px 0px #000;
-    color: #ffff;
+    width: 100%; 
+  }
+
+  
   }
   
+ 
   
-  /* Estilos para el enlace de términos y condiciones */
-  .form-group a {
-    text-decoration: none;
-    color: #6bb39b;
-  }
-  
-  /* Estilos para el checkbox de términos y condiciones */
-  .form-group input[type="checkbox"] {
-    margin-right: 5px;
-  }
-  
-  /* Estilos en hover para el botón */
-  .botons:hover {
-    cursor: pointer;
-    background-color: #2c7575;
-    transform: scale(1.1);
-    transition: all 0.5s;
-    color: #6bb39b;
-  }
   

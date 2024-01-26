@@ -1,4 +1,3 @@
-
 import React from 'react';
 import  MoreInformation  from "../components/OurTeam/MoreInformation";
 

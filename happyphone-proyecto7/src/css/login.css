@@ -1,3 +1,23 @@
 .container{
 margin: 3rem;
+display: flex;
+justify-content: center;
+}
+
+.login-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.width-form-login{
+    width: 500px;
+}
+.lines-form-register{
+    display: flex;
+    flex-direction: row;
+}
+.captcha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

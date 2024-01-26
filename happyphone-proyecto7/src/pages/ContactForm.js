@@ -194,10 +194,11 @@ export function ContactForm() {
           </a>
 
           <a href="https://www.instagram.com/">
-            <img className="rrss-contact" src={logoinstagram} alt="logo de WhatsApp" />
+            <img className="rrss-contact" src={logoinstagram} alt="logo de Instagram" />
           </a>
           <a href="https://www.facebook.com/">
-            <img className="rrss-contact" src={logofacebook} alt="logo de WhatsApp" />
+            <img className="rrss-contact" src={logofacebook} alt="logo de Facebook" />
+            <img className="rrss-contact" src={logowhatsapp} alt="logo de WhatsApp" />
           </a>
 
         </div>

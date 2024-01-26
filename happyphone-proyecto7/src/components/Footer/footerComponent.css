@@ -1,14 +1,3 @@
-@font-face {
-  font-family: 'poppB';
-  src: url("../../fonts/poppins/Poppins-Bold.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: 'poppR';
-  src: url("../../fonts/poppins/Poppins-Regular.ttf") format('truetype');
-}
-
-
 
 /* footerComponent.css */
 
@@ -24,8 +13,8 @@ footer {
   color: #f7f4e8;
   text-align: center;
 }
+
 .footer-list{
-  
     list-style: none;
     display: grid;
     align-items: center;
@@ -40,6 +29,12 @@ footer {
 .info-footer {
   list-style-type: none;
   margin: 0;
+    align-items: center;
+    justify-items: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+  
+
 }
 
 .logo-rrss {
@@ -53,6 +48,7 @@ footer {
   transform: scale(1.3);
 }
 
+
 a {
   text-decoration: none;
   color: #f7f4e8;
@@ -61,6 +57,8 @@ a {
 a:hover {
   color: #85e6c0;
 }
+
+
 
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 767px) {

@@ -86,12 +86,12 @@
             if (username === '' || username === null) {
                 result = false;
                 // console.log("no hay nombre")
-                toast.warning('Please Enter Username');
+                toast.warning('Por favor introduce el nombre de usuario');
             }
             if (password === '' || password === null) {
                 result = false;
                 // console.log("no hay controseña")
-                 toast.warning('Please Enter Password');
+                 toast.warning('Por favor introduce la contraseña');
             }
             
             return result;
@@ -99,15 +99,16 @@
         }
        
         return (
-            <div className="container">
+            <section className="container">
               
-                <div className="row">
-                <div className="offset-lg-3 col-lg-6" style={{ marginTop: '50px' }}>
-                    <form onSubmit={ProceedLogin} className="container">
-                        <div className="card">
-                            <div className="card-header" style={{ textAlign: 'center' }}>
-                            <h2>Login</h2>
-                            </div>
+               
+                <div className="width-form-login">
+                  
+                    <form onSubmit={ProceedLogin} className="formulario">
+                        
+                            
+                            <h4>LOGIN</h4>
+                            
                             <div className="card-body">
                                 <div className="form-group">
                                     <label>Nombre de usuario <span className="errmsg">*</span></label>
@@ -118,15 +119,15 @@
                                     <input type="password" value={password} onChange={e => passwordupdate(e.target.value)} className="form-control"></input>
                                 </div>
                             </div>
-                            <div className="card-footer">
+                            <div className="login-button">
                                 <button type="submit" className="link-to-return">Login</button>  
                                 <Link className="link-to-return" to={'/register'}>Nuevo Usuario</Link>
                             </div>
-                        </div>
+                        
                     </form>
                 </div>
-            </div>
-            </div>
+            </section>
+         
             
         );
     }

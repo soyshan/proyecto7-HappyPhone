@@ -3,12 +3,11 @@ import { WishListC } from '../components/WishListC'
 
 export function WishList(){
 return (
-<section>
-<h2>Tus producto favoritos</h2>
-<article>
-<WishListC />
-</article>
+    <section className="section-wish-list">
+    
 
-</section>
+        <WishListC />
+    
+    </section>
 );
 };
