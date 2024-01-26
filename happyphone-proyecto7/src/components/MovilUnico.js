@@ -40,8 +40,11 @@ export default function MovilUnico() {
 
   return (
     <div className="container-movil-product">
+    <div className="img-product-detail">
+        <img src={`${process.env.PUBLIC_URL}/imgJson/${movil.ruta_imagen}`} alt={movil.nombre} className="product-image-detail" />
+      </div>
+      <div className="details-container">
       <div className="description">
-      <img src={`${process.env.PUBLIC_URL}/imgJson/${movil.ruta_imagen}`}alt={movil.nombre} />
         <h2>{movil.nombre}</h2>
         <p>{movil.descripcion}</p>
         <p>{movil.color}</p>
@@ -52,6 +55,8 @@ export default function MovilUnico() {
         <p>{movil.resolucion}</p>
         <p>{movil.firstCamera}</p>
       </div>
+
+      
       <div className="cantidad">
         <input
           type="number"
@@ -66,6 +71,8 @@ export default function MovilUnico() {
         <br />
         <Link to="/" className="back-to-catalog">Volver al catálogo</Link>
       </div>
+    
+    </div>
     </div>
   );
 }

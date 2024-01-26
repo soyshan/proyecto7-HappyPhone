@@ -128,7 +128,7 @@
 @media screen and (max-device-width: 560px){
   .contacto {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     padding: 10px;
     margin: 15px;
     border-radius: 10px;
@@ -157,9 +157,7 @@
     width: 100%; 
   }
 
-  .mapa {
-    margin-right:10%;
-  }
+  
   }
   
  

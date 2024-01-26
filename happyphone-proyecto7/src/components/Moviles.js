@@ -20,7 +20,7 @@ export default function Moviles() {
  const [moviles, setMoviles] = useState([])
 
  useEffect(() => {
-     fetch("http://localhost:3001/api/mobiles")
+     fetch("http://localhost:5500/catalogo")
      .then(response => response.json())
      .then (datos => {
          setMoviles(datos)

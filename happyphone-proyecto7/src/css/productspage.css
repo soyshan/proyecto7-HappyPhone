@@ -12,13 +12,23 @@
     margin-bottom: 20px;
   }
   
+  .name-product{
+    color:#0b0b0d;
+  }
+  .name-product:hover{
+    color:#85e6c0;
+  }
+
+
   .tarjetas-producto {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: -10px; /* Agrega un margen negativo para contrarrestar el margen de las tarjetas individuales */
+    margin: -10px; 
   }
   
+/*para cada tarjeta individual*/
+
   .tarjeta-producto {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -26,7 +36,7 @@
     margin: 10px;
     margin-top: 1rem;
     width: 250px;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total de la tarjeta */
+    box-sizing: border-box; 
   }
   
   .tarjeta-producto img {

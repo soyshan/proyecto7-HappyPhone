@@ -48,23 +48,30 @@
 
 
 
-
-/*FICHA PRODUCTO*/
-
-.product-image {
-  max-width: 80%;
-  max-height: 100%;
-  margin-left: 1.5rem;
-  width: 400px;
-  object-fit: cover; /*Así conseguimos que la imagen se adapte al recuadro que la contiene*/
-  transition: all 0.5s; /*Así conseguimos que al ampliar la imagen el efecto sea más suave*/
+.img-product-detail {
+  flex: 1;
+  margin-right: 20px;
 }
 
-.product-image:hover {
+.product-image-detail {
+  max-width: 60%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  margin-left:40%;
+  margin-top:10%;
+}
+
+.product-image-detail:hover {
   transform: scale(1.1); /*Así ampliamos la imagen*/
 }
 
 
+.details-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 
 .container-movil-product {
@@ -72,7 +79,6 @@
   margin: 94px;
   width: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
@@ -80,9 +86,15 @@
 }
 
 .description {
+  flex: 1;
+  padding: 0 20px;
   display: grid;
   justify-items: center;
   align-items: center;
+  line-height: 0.5px;
+}
+.description p {
+  margin-bottom: 5px; /* Ajusta según tus preferencias */
 }
 
 .h2-container-movil-unico {
@@ -114,10 +126,11 @@
 .btn-position{
   display: flex;
   flex-direction: row;
+  margin-left:6rem;
 }
 
 .cantidad-input {
-  width: 40px;
+  width: 70px;
   height: 30px;
   text-align: right;
   font-size: 20px;
@@ -127,50 +140,42 @@
 /* Media query para pantallas de hasta 768px de ancho */
 @media screen and (max-width: 768px) {
   .main-container {
-    padding: 0 20px; 
+    padding: 0 20px;
   }
 
-  .product {
-    margin: 20px; 
-  }
-
-  .product-image {
-    width: 100%; 
-    margin-left: 0; 
+  .product-image-detail {
+    width: 100%;
+    margin-left: 0;
   }
 
   .main-product {
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-
 
   .add-to-cart,
-  .clear-cart {
-    width: 100%; 
-    margin-top: 10px; 
-    font-size: 0.8rem; 
+  .back-to-catalog {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 0.8rem;
     height: 2rem;
   }
+
   .cantidad {
-    margin-left: 0; 
-    margin-top: 15px; 
+    margin-left: 0;
+    margin-top: 15px;
   }
 
   .cantidad-input {
-    width: 30px; 
-    height: 20px; 
-    font-size: 16px; 
+    width: 30px;
+    height: 20px;
+    font-size: 16px;
   }
 
   .btn {
-    width: 30px; 
-    height: 30px; 
-    font-size: 20px; 
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
   }
 }
-
-
-
-

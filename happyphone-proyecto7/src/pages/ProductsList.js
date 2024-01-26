@@ -68,7 +68,7 @@ export const ProductsList = () => {
                 alt={producto.nombre}
                 className="imagen-producto"
               />
-              <h3>{producto.nombre}</h3>
+              <h3 className="name-product">{producto.nombre}</h3>
             
               <p className="precio">Precio: ${producto.precio}</p>
             </div>
