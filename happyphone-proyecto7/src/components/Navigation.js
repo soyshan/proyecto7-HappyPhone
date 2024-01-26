@@ -1,13 +1,14 @@
-//import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import hamburguer from '../assets/hamburguer.png';
 import shoppingcart from '../assets/shoppingcart.png';
 // import SearchBar from './SearchBar';
 
-export const Navigation = () => {
+export const Navigation = ({ cartAmount }) => {
   const navigate = useNavigate();
   const [isNavOpen, setIsNavOpen] = useState(false);
+  
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -50,6 +51,7 @@ export const Navigation = () => {
         <li>
           <Link to='carrito' onClick={redirectToOtraPagina}>
           <img className='logo-shoppingcart' src={shoppingcart} alt="Carro" />
+          <div id="cartAmount" className="cartAmount">{cartAmount}</div>
         </Link>
         </li>
         
