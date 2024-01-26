@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../components/contact.css';
+import '../css/contact.css';
 import userLogo from '../assets/user.png';
 import logowhatsapp from '../assets/whatsapp.png';
 import logoinstagram from '../assets/instagram.svg';
 import logofacebook from '../assets/facebook.svg';
-
-
 import emailIcon from '../assets/envelope.png';
 import phone from '../assets/phone.png';
 import { Link } from 'react-router-dom';

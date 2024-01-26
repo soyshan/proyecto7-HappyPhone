@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../css/cart.css';
 import { Link } from "react-router-dom";
 
+
 export const Carrito = () => {
     const [carrito, setCarrito] = useState([]);
     const [total, setTotal] = useState(0);

@@ -15,6 +15,8 @@ import { Carrito } from './pages/Carrito';
 import { TechnicalService } from './pages/TechnicalService';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
+import {ToastContainer } from 'react-toastify';
+import { WishList } from './pages/WishList';
 
 function App() {
   return (
@@ -36,12 +38,14 @@ function App() {
           <Route path='technicalservice' element={ <TechnicalService /> } />
           <Route path='login' element={ <Login /> } />
           <Route path='register' element={ <Register /> } />
+          <Route path='wishlist' element={ <WishList /> } />
           
         </Routes>
         
         
         <Footer />
       </BrowserRouter>
+      <ToastContainer/>
     </div>
   );
 }

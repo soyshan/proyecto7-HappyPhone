@@ -1,5 +1,5 @@
 import React from 'react';
-import '../components/thanks.css'
+import '../css/thanks.css'
 import { Link } from 'react-router-dom';
 import checkImage from '../assets/check.png';
 

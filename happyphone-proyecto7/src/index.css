@@ -91,18 +91,7 @@ main {
   align-items: flex-ends;
 }
 
-.cart-amount {
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  background-color: red;
-  top: 25px;
-  right: 12px;
-  font-size: 16px;
-  margin: 0px;
-  border-radius: 50%;
-  min-width: 22px;
-}
+
 .clean {
   text-decoration: none;
   color: #ffffff00;
@@ -202,10 +191,9 @@ main {
   height: 15rem;
   }
   .image-json:hover{
-
-      height: 15rem;
-      transition: all .9s;
-    } 
+    height: 18rem;
+    transition: all 0.9s;
+  } 
 
     .link-to-return{
     display: inline-block;
@@ -279,7 +267,6 @@ main {
     /* Estilos para el ícono de hamburguesa, por ejemplo: */
     width: 30px;
     height: 3px;
-    
     margin: 5px 0;
     transition: 0.4s;
     margin-right: 2rem;
@@ -373,18 +360,7 @@ main {
   align-items: flex-ends;
 }
 
-.cart-amount {
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  background-color: red;
-  top: 25px;
-  right: 12px;
-  font-size: 16px;
-  margin: 0px;
-  border-radius: 50%;
-  min-width: 22px;
-}
+
 
 @media screen and (max-device-width: 768px) {
   #frameBuscar {
