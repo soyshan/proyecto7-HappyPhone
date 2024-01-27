@@ -51,7 +51,7 @@
   
   .precio {
     font-weight: bold;
-    color: #000000;
+    color: #0b0b0d;
     margin-left: 50px;
   }
 
@@ -69,16 +69,6 @@
     color: #6bb39b;
      /* Ajusta el margen a tu preferencia */
   }
-  
- 
-
-  /* Estilo para las opciones del select */
-  .filter-button-select option {
-    background-color: #fff; /* Ajusta el color de fondo a tu preferencia */
-  }
-
-  
-  
 
 
   /* Estilos adicionales para hacerlo responsive */

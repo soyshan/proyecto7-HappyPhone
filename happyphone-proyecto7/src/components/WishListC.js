@@ -31,7 +31,7 @@ export function WishListC() {
   return (
     <main>
       <aside className="cart">
-        <h2>Tus favoritos</h2>
+        <h2>Tus móviles favoritos</h2>
         <ul className="cart-items">
           {favorito.map((item, index) => (
             <li key={index}>

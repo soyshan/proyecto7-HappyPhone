@@ -12,14 +12,6 @@ footer {
   padding: 20px;
   color: #f7f4e8;
   text-align: center;
-  grid-template-areas:
-    "about"
-    "social"
-    "info";
-  gap: 20px;
-  padding: 20px;
-  color: #f7f4e8;
-  text-align: center;
 }
 
 .footer-list{
@@ -43,12 +35,6 @@ footer {
     padding-bottom: 16px;
   
 
-}
-.about-footer,
-.rrss-footer,
-.info-footer {
-  list-style-type: none;
-  margin: 0;
 }
 
 .logo-rrss {

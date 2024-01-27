@@ -63,7 +63,7 @@ export const Carrito = () => {
             <p>Total: <span className="total-amount">{formatCurrency(total)}</span></p>
             <br />
             <br />
-            <button className="pay-now" onClick={() => window.open('../html/pasarelapago.html', '_self')}>Pagar ahora</button>
+            <button className="pay-now" onClick={() => window.open('./pasarelapago')}>Pagar ahora</button>
             <button className="clear-cart" onClick={limpiarCarrito}>Limpiar carrito</button>
             <button className="continue-shopping">Seguir comprando</button>
           </div>

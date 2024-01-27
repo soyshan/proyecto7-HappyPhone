@@ -1,4 +1,6 @@
-
+.form-work-with-us{
+  width: 300px;
+}
 .h2-work-with-us {
   font-size: 30px;
   text-align: center;
@@ -42,12 +44,12 @@ form {
 
 label {
   margin-bottom: 2px;
-  color: #2c3e50;
+  color: #0b0b0d;
 }
 
 input,
 button {
-  margin-bottom: 16px;
+
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -59,7 +61,7 @@ button {
 
 .file-label {
   background-color: #6bb39b;
-  color: #fff;
+  color: #F7F4E8;
   padding: 8px;
   border-radius: 4px;
   cursor: pointer;
@@ -71,15 +73,20 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.file-label:hover {
-  background-color: #7f8180;
+.file-label:hover,.button-work-with-us:hover {
+  background-color: #0b0b0d;
+  color:#85e6c0;
 }
 
 .button-work-with-us {
-  background-color: #7f8180;
-  color: #fff;
+  background-color: #6bb39b;
+  color: #f7f4e8;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+.input-work-with-us{
+  width: 20px;
+  height: 10px;
 }
 
 button:hover {
@@ -100,3 +107,10 @@ button:hover {
     transform: translateY(0);
   }
 } 
+
+
+@media screen and (max-width: 768px){
+  .main-work-with-us{
+      width: 100%;
+      }
+  }

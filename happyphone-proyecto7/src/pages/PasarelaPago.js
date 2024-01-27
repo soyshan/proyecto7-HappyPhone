@@ -43,7 +43,7 @@ export function PasarelaPago() {
        alert('El nombre debe comenzar con mayúscula y añadir el apellido');
        return;
      }
-     if (!/[0-9]{13}$/.test(formData.cardNumber)) {
+     if (!/[0-9]{13}/.test(formData.cardNumber)) {
       alert("Por favor, ingrese un número de tarjeta válido.");
       return;
     }
@@ -65,6 +65,50 @@ export function PasarelaPago() {
 
   
     <div className="containerPasarelaPago">
+      <section class="section-send">
+                  <h4> Formas de entrega</h4>
+                  <p class="section-send-sub-tittle"> Seleccione una opción de envío</p>
+                  <table class="table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="delivery_option_radio">
+                          <input class="delivery_option_radio" name="send" type="radio"/>
+                        </td>
+
+                        <td>
+                          <strong>Correos Express</strong> Entrega a domicilio en 24/48 horas. Navidades 72 horas. El mas rápido
+                        </td>
+                        <td class="delivery_option_price">
+                          3,90 € (IVA incluído)
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="delivery_option_radio">
+                          <input class="delivery_option_radio" name="send" type="radio"/>
+                        </td>
+                        <td>
+                          <strong>Correos Entrega en Oficina</strong> Recogida en su oficina de Correos en 24h/72h
+                        </td>
+                        <td class="delivery_option_price">
+                          3,90 € (IVA incluído)
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <p class="section-send-sub-tittle">Dejar un mensaje</p>
+                  <p>Si desea añadir un mensaje sobre su pedido, por favor escribalo en el campo de abajo.</p>
+                  <textarea cols="120" rows="2" class="text-area-package"></textarea>
+
+                  <p class="section-send-sub-tittle">Condiciones generales de venta</p>
+
+                  <p class="checkbox">
+                    <input type="checkbox" required />
+                    <label>He leído y acepto las condiciones generales de venta.*</label>
+                  </p>
+
+             </section>
      <div className='divPasarelaPago'>
       <div className="payment-container">
         {isSubmitted ? (
@@ -74,6 +118,7 @@ export function PasarelaPago() {
             {/* <Link to="#" className="back-to-catalog">Volver al catálogo</Link> */}
           </div>
         ) : (
+          
           <form onSubmit={handleSubmit}>
                     
             <h2>Detalle de Pago</h2>

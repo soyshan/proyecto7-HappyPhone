@@ -1,7 +1,7 @@
 
   .mainPasarelaPago{
     font-family: "poppB";
-    background-color: #f4f4f4;
+    background-color: #f7f4e8;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@
   }
   .divPasarelaPago {
     width: 400px;
-    background-color: #fff;
+    background-color: #f7f4e8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,17 +23,19 @@
   .containerPasarelaPago{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   
   .payment-container {
-    background-color: #fff;
+    background-color: #f7f4e8;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
     text-align: center;
-    color: #101111;
+    color: #0b0b0d;
   }
   
   h2 {
@@ -58,7 +60,7 @@
   
   button {
     background-color: #6bb39b;
-    color: #fff;
+    color: #f7f4e8;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -67,6 +69,7 @@
   
   button:hover {
     background-color: #0b0b0d;
+    color: #85e6c0;
   }
   
   .card-icons {
@@ -78,3 +81,11 @@
     margin-right: 10px;
     color: #555;
   }
+  .section-send{
+    margin: 4rem;
+    width: 100%;
+  }
+  .text-area-package{
+      width: 400px;
+    }
+ 

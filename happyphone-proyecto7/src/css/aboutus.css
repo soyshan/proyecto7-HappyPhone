@@ -7,7 +7,7 @@
 }
 
 .bienvenido, .historia, .compromiso, .vision, p {
-  color: black;
+  color: #0b0b0d;
   text-decoration: none;
   text-align: justify;
   font-size: 16px;
@@ -16,7 +16,7 @@
   margin-bottom: 30px;
 }
 .h2-section-about-us {
-  color: #2f686e;
+  color: #6bb39b;
   font-weight: bolder;
   font-style: normal;
   text-decoration: underline;

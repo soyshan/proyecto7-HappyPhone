@@ -6,7 +6,7 @@
 
 .cart-amount {
   position: absolute;
-  color: white;
+  color: #f7f4e8;
   font-weight: bold;
   background-color: red;
   top: 25px;
@@ -30,6 +30,7 @@ margin: 0;
 .cart {
   position: relative;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .cart h2 {
@@ -66,8 +67,8 @@ margin: 0;
 .clear-cart,
 .continue-shopping,
 .pay-now {
-  background-color: #297780;
-  color: #fff;
+  background-color: #6bb39b;
+  color: #f7f4e8;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -76,7 +77,14 @@ margin: 0;
   width: 11rem;
   height: 2.6rem;
 }
+.continue-shopping{
+  width: 15rem;
+}
 
+.clear-cart:hover,.continue-shopping:hover{
+ background-color: #0b0b0d;
+ color: #6bb39b;
+}
 
 .payment-methods {
   display: flex;
@@ -92,6 +100,7 @@ margin: 0;
 .total p {
   font-size: 18px;
   margin-bottom: 10px;
+  margin-left: 50%;
 }
 .total {
   margin-bottom: 1rem;

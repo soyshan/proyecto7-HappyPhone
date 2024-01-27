@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../css/contact.css'
+import '../css/contact.css';
 import userLogo from '../assets/user.png';
 import logowhatsapp from '../assets/whatsapp.png';
 import logoinstagram from '../assets/instagram.svg';
 import logofacebook from '../assets/facebook.svg';
-
-
 import emailIcon from '../assets/envelope.png';
 import phone from '../assets/phone.png';
 import { Link } from 'react-router-dom';
@@ -64,7 +62,6 @@ export function ContactForm() {
 
     if (Object.keys(newErrors).length === 0) {
       console.log('Datos del formulario:', formData);
-      // Aquí puedes enviar los datos del formulario a tu servidor o hacer lo que necesites
 
       // Marca el formulario como enviado
       setFormSubmitted(true);
@@ -188,40 +185,19 @@ export function ContactForm() {
             </button>
           </div>
         </form>
-       
-       
-       
-       
+
         <div className="form-group">
-          <a href="https://web.whatsapp.com/">
-            <img className="rrss-contact" src={logowhatsapp} alt="logo de WhatsApp" />
-          </a>
-
           <a href="https://www.instagram.com/">
-            <img className="rrss-contact" src={logoinstagram} alt="logo de WhatsApp" />
+            <img className="rrss-contact" src={logoinstagram} alt="logo de Instagram" />
           </a>
           <a href="https://www.facebook.com/">
-            <img className="rrss-contact" src={logofacebook} alt="logo de WhatsApp" />
+            <img className="rrss-contact" src={logofacebook} alt="logo de Facebook" />
             <img className="rrss-contact" src={logowhatsapp} alt="logo de WhatsApp" />
           </a>
-
-          <a href="https://www.instagram.com/">
-            <img className="rrss-contact" src={logoinstagram} alt="logo de WhatsApp" />
-          </a>
-          <a href="https://www.facebook.com/">
-            <img className="rrss-contact" src={logofacebook} alt="logo de WhatsApp" />
-          </a>
-
 
         </div>
 
-       
-
-       
-
-       
-
-       
+  
         </>
         )}
       </section>
@@ -230,7 +206,7 @@ export function ContactForm() {
       <figure className="mapa">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.5506301469377!2d-3.7021057241135527!3d40.39665107144289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4226346cdb5ebb%3A0x73a304caeab8973a!2sC.%20Fernando%20Poo%2C%2025%2C%2028045%20Madrid!5e0!3m2!1ses!2ses!4v1699288986331!5m2!1ses!2ses"
-          width="400"
+          width="370"
           height="300"
           style={{ border: 0 }}
           allowFullScreen=""
