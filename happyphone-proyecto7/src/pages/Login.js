@@ -104,7 +104,7 @@
                
                 <div className="width-form-login">
                   
-                    <form onSubmit={ProceedLogin} className="formulario">
+                    <form onSubmit={ProceedLogin} className="formulario-login">
                         
                             
                             <h4>LOGIN</h4>

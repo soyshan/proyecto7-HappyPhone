@@ -37,7 +37,7 @@ export const WorkWithUs = () => {
 
   return (
     
-    <main>
+    <main className="main-work-with-us">
       <h2 className='h2-work-with-us'>Trabaja con Nosotros</h2>
       <p className='p-work-with-us'>Únete a nuestro equipo y sé parte de HappyPhone.</p>
       <section className='section-work-with-us'>

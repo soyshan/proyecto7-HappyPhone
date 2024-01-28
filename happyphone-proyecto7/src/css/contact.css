@@ -125,20 +125,8 @@
 
 
 
-
-@media screen and (max-device-width: 560px){
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 15px;
-    border-radius: 10px;
-    max-width: 500px;
-  }
-}
-
-  /* Media query para pantallas más pequeñas */
-  @media screen and (max-width: 800px) {
+  
+  @media screen and (max-width: 768px) {
     .formulario {
       padding: 10px; 
       margin: 4rem 2rem;
@@ -157,6 +145,11 @@
     width: 100%; 
   }
 
+  .mapa{
+    width: 10%;
+    max-width:30%;
+    margin-right:90%;
+  }
   
   }
   

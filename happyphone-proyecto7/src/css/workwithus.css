@@ -107,3 +107,10 @@ button:hover {
     transform: translateY(0);
   }
 } 
+
+
+@media screen and (max-width: 768px){
+  .main-work-with-us{
+      width: 100%;
+      }
+  }
