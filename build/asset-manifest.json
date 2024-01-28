@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cf17bc0d.css",
+    "main.js": "/static/js/main.70fa28ff.js",
+    "static/js/999.95a1e9aa.chunk.js": "/static/js/999.95a1e9aa.chunk.js",
+    "static/js/787.1e6dd807.chunk.js": "/static/js/787.1e6dd807.chunk.js",
+    "static/media/happyinicio.svg": "/static/media/happyinicio.d83bcb002dee01561854eed2802faf1f.svg",
+    "static/media/Poppins-Bold.ttf": "/static/media/Poppins-Bold.266c2af2fa67dafa3c34.ttf",
+    "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.4cbed326d43a3e353c4e.ttf",
+    "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.4603832ffdb676d05a8f.ttf",
+    "static/media/logo.png": "/static/media/logo.f6b2ef0f0ce04b39eb0f.png",
+    "static/media/phone.png": "/static/media/phone.8508f66452131066d31c.png",
+    "static/media/user.png": "/static/media/user.c4f402b5637c968199a0.png",
+    "static/media/instagram.svg": "/static/media/instagram.c0288e30d45bb6b475964828994da7d0.svg",
+    "static/media/envelope.png": "/static/media/envelope.cc50bd955ffcc42b6792.png",
+    "static/media/whatsapp.png": "/static/media/whatsapp.a6157f8e77395c4d4f61.png",
+    "static/media/tiktok.svg": "/static/media/tiktok.fdb1d6beb230c030c63068f179084d2a.svg",
+    "static/media/youtube.svg": "/static/media/youtube.e022d823ed4ddb5740ea2dccaaef9c05.svg",
+    "static/media/facebook.svg": "/static/media/facebook.d9a349d803a67de80f11773852980e80.svg",
+    "static/media/shoppingcart.png": "/static/media/shoppingcart.9dbdbee0a886eeb61b16.png",
+    "static/media/busqueda.svg": "/static/media/busqueda.b8d87466eb495e62f808c0c84451fdc1.svg",
+    "index.html": "/index.html",
+    "main.cf17bc0d.css.map": "/static/css/main.cf17bc0d.css.map",
+    "main.70fa28ff.js.map": "/static/js/main.70fa28ff.js.map",
+    "787.1e6dd807.chunk.js.map": "/static/js/787.1e6dd807.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf17bc0d.css",
+    "static/js/main.70fa28ff.js"
+  ]
+}
