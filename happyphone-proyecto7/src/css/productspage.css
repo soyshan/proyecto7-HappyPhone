@@ -27,7 +27,6 @@
     margin: -10px; 
   }
   
-/*para cada tarjeta individual*/
 
   .tarjeta-producto {
     border: 1px solid #ccc;
@@ -56,7 +55,6 @@
   }
 
 
-  /* En tu archivo CSS */
 .filter-text{
   margin-left: 3rem;
 }
@@ -67,33 +65,33 @@
     margin-top: 20px;
     margin-bottom: 20px;
     color: #6bb39b;
-     /* Ajusta el margen a tu preferencia */
+    
   }
 
 
-  /* Estilos adicionales para hacerlo responsive */
+  
   @media (max-width: 768px) {
     .tarjeta-producto {
-      width: calc(50% - 20px); /* 50% del ancho del contenedor menos el margen */
+      width: calc(50% - 20px); 
     }
   }
   
   @media (max-width: 576px) {
     .tarjeta-producto {
-      width: calc(100% - 20px); /* 100% del ancho del contenedor menos el margen */
+      width: calc(100% - 20px); 
     }
 
     .search-input-container {
-      width: 100%; /* Ajusta el ancho del contenedor para pantallas más pequeñas */
+      width: 100%; 
     }
   
     .search-input {
-      width: 100%; /* Hace que el campo de búsqueda ocupe todo el ancho disponible */
-      margin-left: 0; /* Elimina el margen izquierdo para aprovechar mejor el espacio */
+      width: 100%; 
+      margin-left: 0;
     }
   
     .search-icon {
-      display: none; /* O ajusta su tamaño o posición para pantallas más pequeñas según tu preferencia */
+      display: none; 
     }
   }
  

@@ -82,9 +82,9 @@ export default function MovilUnico() {
       </div>
       <div className="btn-position">
         <button className="add-to-cart" data-product-name="HappyZ Flip" onClick={añadirAlCarrito}>Comprar</button>
-        <br />
+      
         <button className="add-to-cart" data-product-name="HappyZ Flip" onClick={añadirAFavoritos}>Me gusta</button> 
-        <br/>
+        
         <Link to="/" className="back-to-catalog">Volver al catálogo</Link>
       </div>
     

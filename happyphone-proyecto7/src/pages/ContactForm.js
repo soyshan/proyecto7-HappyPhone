@@ -21,7 +21,7 @@ export function ContactForm() {
 
   const [errors, setErrors] = useState({});
   const [isFormSubmitted, setFormSubmitted] = useState(false);;
-  const navigate = useNavigate();  // Usa useNavigate en lugar de Navigate
+  const navigate = useNavigate();  
 
 
   const handleChange = (e) => {

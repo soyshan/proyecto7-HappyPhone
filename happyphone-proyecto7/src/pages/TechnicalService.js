@@ -16,7 +16,7 @@ export function TechnicalService() {
 
   const [errors, setErrors] = useState({});
   const [isFormSubmitted, setFormSubmitted] = useState(false);;
-  const navigate = useNavigate();  // Usa useNavigate en lugar de Navigate
+  const navigate = useNavigate();  
 
 
   const handleChange = (e) => {
@@ -53,17 +53,14 @@ export function TechnicalService() {
 
     if (Object.keys(newErrors).length === 0) {
       console.log('Datos del formulario:', formData);
-      // Aquí puedes enviar los datos del formulario a tu servidor o hacer lo que necesites
-
-      // Marca el formulario como enviado
+      
       setFormSubmitted(true);
     }
   };
 
   useEffect(() => {
     if (isFormSubmitted) {
-      // Realiza la redirección
-      navigate('/Thanks');
+            navigate('/Thanks');
     }
   }, [isFormSubmitted, navigate]);
 

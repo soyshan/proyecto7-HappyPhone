@@ -41,7 +41,7 @@ export const Carrito = () => {
       return carrito.map((item, index) => (
         <li key={index}>
           <img
-            src={`/imgJson/happy${item.nombre.split(' ')[1]}.svg`} // Asegúrate de que las rutas a las imágenes sean correctas
+            src={`/imgJson/happy${item.nombre.split(' ')[1]}.svg`} 
             alt={`${item.nombre} image`}
             className="product-image"
           />
@@ -53,7 +53,7 @@ export const Carrito = () => {
     };
   
     return (
-        <main>
+        <main className='main-carrito'>
         <aside className="cart">
           <h2>Carrito</h2>
           <ul className="cart-items">

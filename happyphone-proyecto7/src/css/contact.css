@@ -1,14 +1,9 @@
 
-  
-
-  
   /*CONTACTO*/
   .contacto{
     display: flex;
     justify-content: center;
     padding: 43px -7px 10px 97px;
-    /* margin-bottom: -13rem; */
-    /* margin-top: -2rem; */
     height: auto;
     flex-wrap: wrap;
     align-items: center;
@@ -148,7 +143,8 @@
   .mapa{
     width: 10%;
     max-width:30%;
-    margin-right:90%;
+    display: flex;
+    justify-content: center;
   }
   
   }

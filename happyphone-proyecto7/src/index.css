@@ -84,11 +84,10 @@ main {
 .nav-space ul {
   display: flex; 
   list-style: none;
-  /* Muestra la lista en horizontal */
 }
 
 .nav-space li {
-  margin-right: 20px; /* Espacio entre cada enlace */
+  margin-right: 20px;
 }
 .logo {
   height: 5rem;
@@ -99,6 +98,8 @@ main {
 .logo-shoppingcart {
 	width: 40px;
 	margin-right: 15px;
+  align-items: flex-ends;
+
 }
 .a-nav {
 	font-weight: bold;
@@ -107,10 +108,7 @@ main {
     text-decoration: none;
 
 }
-.logo-shoppingcart {
-  width: 40px;
-  align-items: flex-ends;
-}
+
 
 
 .clean {
@@ -285,15 +283,15 @@ main {
 
 @media screen and (max-width: 768px) {
   .nav-space {
-    display: none; /* Ocultar el menú normal en pantallas pequeñas */
+    display: none; 
   }
 
   .menu-toggle {
-    display: block; /* Mostrar el ícono de hamburguesa en pantallas pequeñas */
+    display: block; 
   }
 
   .menu-toggle .hamburger {
-    /* Estilos para el ícono de hamburguesa, por ejemplo: */
+   
     width: 30px;
     height: 3px;
     margin: 5px 0;
@@ -303,13 +301,13 @@ main {
   }
 
   .nav-space.open {
-    display: block; /* Mostrar el menú desplegable al hacer clic en el ícono de hamburguesa */
+    display: block; 
     z-index: 800;
     margin-top: 11rem;
   }
 
   .nav-space ul {
-    list-style: none; /* Quita los puntos de la lista */
+    list-style: none; 
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -320,7 +318,7 @@ main {
   }
 
   .nav-space li {
-    margin-bottom: 10px; /* Espacio entre cada enlace */
+    margin-bottom: 10px; 
   }
 
   .main-image{
@@ -351,13 +349,4 @@ height: 15rem;
 }
 
 
-main {
-  flex: 1 0 auto;
-}
-
-
-.logo-shoppingcart {
-  width: 40px;
-  align-items: flex-ends;
-}
 

@@ -1,19 +1,6 @@
 import React, {useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-//  function useMoviles(){
-
-   //  const [moviles, setMoviles] = useState([])
-
-   //  useEffect(() => {
-   //      fetch("http://localhost:5500/catalogo")
-   //      .then(response => response.json())
-   //      .then (datos => {
-   //          setMoviles(datos.catalogo)
-   //      })
-   //  }, [])
-   //  return moviles
-//  }
 
 export default function Moviles() {
 

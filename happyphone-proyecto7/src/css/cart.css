@@ -27,6 +27,9 @@ margin: 0;
 
 
 /*estilo carrito*/
+.main-carrito{
+  min-height: 50vh;
+}
 .cart {
   position: relative;
   text-align: center;
@@ -55,7 +58,7 @@ margin: 0;
 }
 
 .product-image {
-   width: 110px; /*Tamaño deseado para las imágenes comentado por que afectaba el estilo de la imagen de producto  */
+   width: 110px; 
   height: auto;
   border-radius: 8px;
 }

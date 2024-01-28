@@ -2,6 +2,7 @@ import { useState } from "react";
     import { Link, useNavigate } from "react-router-dom";
     import { toast } from "react-toastify";
     import ReCAPTCHA from "react-google-recaptcha";
+    import '../css/login.css'
     
     
     export function Register()  {
@@ -65,7 +66,7 @@ import { useState } from "react";
                 e.preventDefault();
                 let regobj = { id, name, password, email, phone, country, address, gender };
                 if (IsValidate()) {
-                //console.log(regobj);
+                
                 fetch("http://localhost:8000/user", {
                     method: "POST",
                     headers: { 'content-type': 'application/json' },

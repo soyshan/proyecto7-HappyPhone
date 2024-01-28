@@ -32,7 +32,7 @@ export function PasarelaPago() {
       const currentDate = new Date();
       const expirationDate = new Date(expirationYear, expirationMonth, 0); 
     
-      return expirationDate > currentDate && /^\d{2}\/\d{2}$/.test(expiryDate); // Para saber si han metido la fecha así MM/YY
+      return expirationDate > currentDate && /^\d{2}\/\d{2}$/.test(expiryDate); 
     }
 
 
@@ -115,7 +115,7 @@ export function PasarelaPago() {
           <div>
             <h2>¡Pago realizado!</h2>
             <p>Gracias por su compra.</p>
-            {/* <Link to="#" className="back-to-catalog">Volver al catálogo</Link> */}
+
           </div>
         ) : (
           
@@ -129,18 +129,11 @@ export function PasarelaPago() {
             <input type="text" id="expiry-date" name="date" placeholder="MM/YY" maxlength="5" required /> 
 
             <label htmlFor="cvv">CVV:</label>
-            <input type="text" id="cvv" name="cvv" placeholder="***" maxlength="3" pattern="[0-9]{3}" required />
+            <input type="number" id="cvv" name="cvv" placeholder="***" maxlength="3" required />
 
             <label htmlFor="name">Titular de la Tarjeta:</label>
             <input type="text" id="name" name="name" placeholder="Nombre y primer Apellido" value={formData.name}  onChange={handleChange}  required />
             
-            <div className="card-icons">
-                <i className="fab fa-cc-visa"></i>
-                <i className="fab fa-cc-mastercard"></i>
-                <i className="fab fa-cc-stripe"></i>
-                <i className="fab fa-cc-paypal"></i>
-            </div>
-
             <button type="submit" >Pagar</button>
         </form>
 

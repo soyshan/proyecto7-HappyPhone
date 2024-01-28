@@ -7,7 +7,6 @@
     export function Login()  {
         const [username, usernameupdate] = useState('');
         const [password, passwordupdate] = useState('');
-        // navigator hook
         const usenavigate=useNavigate();
     
         useEffect(()=>{
@@ -17,12 +16,11 @@
         const ProceedLogin = (e) => {
             e.preventDefault();
             if (validate()) {
-                ///implentation
-                // console.log('proceed');
+
                 fetch("http://localhost:8000/user/" + username).then((res) => {
-                    return res.json(); // to written the data into json format
+                    return res.json(); 
                 }).then((resp) => {
-                    //console.log(resp)
+                    
                     if (Object.keys(resp).length === 0) {
                         toast.error('Please Enter valid username');
                     } else {
@@ -36,7 +34,7 @@
                         }
                     }
                 }).catch((err) => {
-                    // toast.error('Login Failed due to :' + err.message);
+                    
                     toast.error('Login Failed! not valid user, veriry username and password. click new user to register!! ');
                 });
             }
@@ -45,8 +43,7 @@
         const ProceedLoginusingAPI = (e) => {
             e.preventDefault();
             if (validate()) {
-                ///implentation
-                // console.log('proceed');
+                
                 let inputobj={"username": username,
                 "password": password};
                 fetch("https://localhost:44308/User/Authenticate",{
@@ -65,17 +62,7 @@
                          sessionStorage.setItem('jwttoken',resp.jwtToken);
                        usenavigate('/')
                     }
-                    // if (Object.keys(resp).length === 0) {
-                    //     toast.error('Please Enter valid username');
-                    // } else {
-                    //     if (resp.password === password) {
-                    //         toast.success('Success');
-                    //         sessionStorage.setItem('username',username);
-                    //         usenavigate('/')
-                    //     }else{
-                    //         toast.error('Please Enter valid credentials');
-                    //     }
-                    // }
+
                 }).catch((err) => {
                     toast.error('Login Failed due to :' + err.message);
                 });
@@ -85,13 +72,12 @@
             let result = true;
             if (username === '' || username === null) {
                 result = false;
-                // console.log("no hay nombre")
+               
                 toast.warning('Por favor introduce el nombre de usuario');
             }
             if (password === '' || password === null) {
                 result = false;
-                // console.log("no hay controseña")
-                 toast.warning('Por favor introduce la contraseña');
+                toast.warning('Por favor introduce la contraseña');
             }
             
             return result;
