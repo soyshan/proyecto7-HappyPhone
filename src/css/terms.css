@@ -1,0 +1,41 @@
+
+  /*TERMINOS & CONDICIONES*/
+  
+  .container_terms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 80px 0 80px;
+  }
+  
+  .column {
+    flex: 1;
+    background-color: #f7f4e8;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .h2-terms {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30px;
+    text-decoration: none;
+    color:#0b0b0d;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    text-align: center;
+    color: #0b0b0d;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: justify;
+    color: #0b0b0d;
+    margin-top: 1rem;
+    font-weight: lighter;
+  }
+  

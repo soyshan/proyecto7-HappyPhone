@@ -1,0 +1,35 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.check {
+  max-width: 10rem;
+  height: auto;
+}
+
+.check-container {
+  text-align: center;
+}
+
+.check:hover {
+  transform: scale(1.1);
+}
+
+.thanks-text .contact-link {
+  color: #6bb39b;
+  text-decoration: none;
+  font-weight: bold;
+  transform: scale(2.8);
+  margin-left: 170px;
+}
+
+.thanks-text .contact-link:hover {
+  color: #6bb39b;
+}
