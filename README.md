@@ -1,10 +1,11 @@
-# HappyPhone <img  src="./happyphone-proyecto7/src/assets/logo.png" width="60" height="70">
+# HappyPhone <img  src="./src/assets/logo.png" width="60" height="70">
+
 
 E-commerce created to sell mobile phones.
 
 Proyecto innovador de **Happy Mobiles**, enfocado en presentar y distribuir una línea exclusiva de teléfonos móviles que redefinen la experiencia del usuario. Ofrecemos dispositivos con diseño vanguardista, tecnología avanzada y opciones de personalización, priorizando una experiencia única para nuestros usuarios.
 
-![imágen de un HappyPhone](./happyphone-proyecto7/public/imgJson/happy.svg )
+![imágen de un HappyPhone](./public/imgJson/happy.svg )
 
 ## Tabla de Contenidos
 
@@ -13,9 +14,6 @@ Proyecto innovador de **Happy Mobiles**, enfocado en presentar y distribuir una 
 - [Contribución](#contribución)
 - [Licencia](#licencia)
 
-## Estado del Proyecto
-Fase 3📲 </br>
-🚧El proyecto se encuentra en estado de construcción 🚧.
 
 ## Instalación 💻
 
@@ -68,7 +66,7 @@ Agradecimiento especial al equipo de desarrollo de la fase 1:
 - <a href="https://trello.com/b/zwwRSk80/proyecto-7-ecommerce-en-react"> Trello </a> </br> 
 - <a href="https://www.figma.com/file/hXMPqeTh2pwQkFuyW0OUR1/HappyPhone_v2.0-(Copy)?type=design&node-id=11%3A3&mode=design&t=4z7u88A7d95cwQfn-1"> Figma </a> </br>
 - <a href="https://github.com/soyshan/proyecto7-HappyPhone">GitHub</a> </br>
-- Deploy
+- <a href="https://proyecto7-happy-phone-three.vercel.app/"> Deploy</a>
 
 
 ## Licencia
